@@ -68,11 +68,11 @@ const Cart = () => {
                     ) : (
                         groupedItems.map((item, idx) => (
                             <div className="cart-item" key={idx}>
-                                <div className="item-img">
+                                <Link to={`/product/${item.id}`} className="item-img">
                                     <img src={item.img} alt={item.name || item.title} />
-                                </div>
+                                </Link>
                                 <div className="item-details">
-                                    <h3>{item.name || item.title}</h3>
+                                    <Link to={`/product/${item.id}`}><h3>{item.name || item.title}</h3></Link>
                                     <div className="item-meta">Unit Price: {item.price}</div>
                                 </div>
                                 <div className="item-actions">
@@ -134,11 +134,11 @@ const Cart = () => {
                 <div className="products-grid">
                     {randomSuggestions.map((prod, idx) => (
                         <div className="product-card" key={idx}>
-                            <div className="product-img-wrapper">
+                            <Link to={`/product/${prod.id}`} className="product-img-wrapper">
                                 <img src={prod.img} alt={prod.name} />
-                            </div>
+                            </Link>
                             <div className="product-info">
-                                <h3>{prod.name}</h3>
+                                <Link to={`/product/${prod.id}`}><h3>{prod.name}</h3></Link>
                                 <div className="product-footer">
                                     <span className="product-price">{prod.price}</span>
                                     <button className="add-btn" onClick={() => addSuggestion(prod)}>

@@ -9,6 +9,8 @@ import Login from './Login';
 import Register from './Register';
 import Categories from './Categories';
 import Products from './Products';
+import ProductDetails from './ProductDetails';
+import BlogDetails from './BlogDetails';
 import Deal from './Deal';
 
 // ScrollToTop Component
@@ -33,8 +35,10 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/deal" element={<Deal />} />
         </Route>
 

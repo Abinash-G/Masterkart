@@ -6,6 +6,7 @@
         "rating": 4.5,
         "badge": "HOT",
         "category": "Fruit",
+        "description": "Crisp, sweet, and juicy red apples sourced directly from Himalayan orchards. Perfect for a healthy snack or fresh apple pie.",
         "img": "https://www.bbassets.com/media/uploads/p/l/40033817_11-fresho-apple-green-regular.jpg"
     },
     {
@@ -15,6 +16,7 @@
         "rating": 4.0,
         "badge": "",
         "category": "Vegetable",
+        "description": "Premium organic broccoli heads, rich in vitamins and perfect for steaming, stir-fries, or healthy salads.",
         "img": "https://www.allrecipes.com/thmb/zubQvhsfRJO8K5SnyqimqyKrG1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8760150-How-to-Steam-Broccoli-ddmfs-7559-4x3-beauty-b270504788b64c51996dfcf3d61fcab9.jpg"
     },
     {
@@ -24,6 +26,7 @@
         "rating": 5.0,
         "badge": "-15%",
         "category": "Dairy",
+        "description": "Pure, farm-fresh whole milk with no added preservatives. Rich in calcium and protein for your daily nutrition.",
         "img": "https://dairynutrition.ca/sites/dairynutrition/files/image_file_browser/dn_article/2023-03/shutterstock_4305538_1182x788px.jpg"
     },
     {
@@ -33,6 +36,7 @@
         "rating": 4.8,
         "badge": "",
         "category": "Fruit",
+        "description": "Sun-ripened juicy oranges packed with Vitamin C. Great for fresh juice or a refreshing zesty snack.",
         "img": "https://t3.ftcdn.net/jpg/15/22/58/88/360_F_1522588854_lTBbT8XB5j1vBlRw6ogdYwFqQBGvbO4x.jpg"
     },
     {
@@ -42,6 +46,7 @@
         "rating": 4.2,
         "badge": "NEW",
         "category": "Fruit",
+        "description": "Naturally sweet and energy-boosting organic bananas. Grown without pesticides and handled with care.",
         "img": "https://nutriscan.app/calories-nutrition/images/banana-7h4m9.webp"
     },
     {
@@ -51,6 +56,7 @@
         "rating": 4.9,
         "badge": "",
         "category": "Fruit",
+        "description": "Sweet, juicy, and vibrant red strawberries. Perfect for desserts, smoothies, or enjoying fresh out of the punnet.",
         "img": "https://groffer.in/wp-content/uploads/2025/02/strw.jpg"
     },
     {
@@ -60,6 +66,7 @@
         "rating": 4.3,
         "badge": "",
         "category": "Vegetable",
+        "description": "Ripe, firm, and tangy fresh tomatoes. Essential for curries, salads, sauces, and sandwiches.",
         "img": "https://img.freepik.com/free-photo/top-view-ripe-fresh-tomatoes-with-water-drops-black-background_141793-3432.jpg"
     },
     {
@@ -69,6 +76,7 @@
         "rating": 4.0,
         "badge": "",
         "category": "Vegetable",
+        "description": "Crunchy and fresh green bell peppers. Adds a perfect zest and crunch to your pizzas, pastas, and stir-fries.",
         "img": "https://youasacook.com/wp-content/uploads/2013/08/dsc_0211.jpg"
     },
     {
@@ -78,6 +86,7 @@
         "rating": 4.6,
         "badge": "FRESH",
         "category": "Vegetable",
+        "description": "Sweet and crunchy organic carrots, grown without harmful chemicals. A great source of Vitamin A and perfect for snacking.",
         "img": "https://www.trustbasket.com/cdn/shop/articles/Carrot.jpg?v=1688378789"
     },
     {
@@ -87,6 +96,7 @@
         "rating": 4.7,
         "badge": "HOT",
         "category": "Dairy",
+        "description": "High-quality farm-fresh eggs with rich golden yolks. Packed with protein and essential nutrients for a healthy breakfast.",
         "img": "https://media.post.rvohealth.io/wp-content/uploads/2020/09/health-benefits-of-eggs-732x549-thumbnail-732x549.jpg"
     },
     {
@@ -96,7 +106,8 @@
         "rating": 4.4,
         "badge": "",
         "category": "Bakery",
-        "img": "/whole_wheat_bread.png"
+        "description": "Soft and wholesome whole wheat bread, baked fresh daily. High in fiber and perfect for making healthy sandwiches.",
+        "img": "whole_wheat_bread.png"
     },
     {
         "id": 12,
@@ -105,7 +116,8 @@
         "rating": 4.8,
         "badge": "-10%",
         "category": "Dairy",
-        "img": "/cheddar_cheese.png"
+        "description": "Aged cheddar cheese with a sharp, rich flavor. Excellent for melting on toast, burgers, or grating over pasta.",
+        "img": "cheddar_cheese.png"
     },
     {
         "id": 13,
@@ -114,7 +126,8 @@
         "rating": 4.2,
         "badge": "",
         "category": "Vegetable",
-        "img": "/fresh_potatoes.png"
+        "description": "Versatile fresh potatoes, perfect for mashing, frying, or baking. A kitchen staple for delicious homemade meals.",
+        "img": "fresh_potatoes.png"
     },
     {
         "id": 14,
@@ -123,6 +136,7 @@
         "rating": 4.7,
         "badge": "HOT",
         "category": "Juice",
+        "description": "Freshly squeezed orange juice with no added sugar. Bursting with natural citrus flavor and Vitamin C.",
         "img": "https://www.lovefoodhatewaste.com/sites/default/files/styles/16_9_two_column/public/2022-08/Fruit-juice-sh1489857866.jpg.webp?itok=pdFMoZ6P"
     },
     {
@@ -132,6 +146,7 @@
         "rating": 4.7,
         "badge": "",
         "category": "Juice",
+        "description": "Sweet and refreshing strawberry juice. Made from real berries for an authentic and delightful fruity taste.",
         "img": "https://www.cleaneatingkitchen.com/wp-content/uploads/2022/05/strawberry-juice-in-pretty-glass.jpg"
     },
     {
@@ -141,6 +156,7 @@
         "rating": 4.7,
         "badge": "",
         "category": "Juice",
+        "description": "Clarified apple juice with a crisp and clean taste. A favorite refreshing beverage for kids and adults alike.",
         "img": "https://www.allrecipes.com/thmb/OaPfxDvr0nl72mkN_qoiVSs529E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/218977-fresh-homemade-apple-juice-ddmfs-3x4-13004-121387bb131642e4839124d261b11094.jpg"
     },
     {
@@ -150,6 +166,7 @@
         "rating": 4.7,
         "badge": "",
         "category": "Juice",
+        "description": "Zesty citrus juice blend of lemon and lime. The perfect base for cocktails, mocktails, or a tangy lemonade.",
         "img": "https://assets.epicurious.com/photos/656a0efa2448d72ec8548b61/16:9/w_4445,h_2500,c_limit/how-far-in-advance-can-you-squeeze-citrus_HERO_111523_5290_VOG_final.jpg"
     },
     {
@@ -159,6 +176,7 @@
         "rating": 4.7,
         "badge": "",
         "category": "Juice",
+        "description": "Hydrating watermelon juice, perfect for beating the summer heat. Naturally sweet and incredibly refreshing.",
         "img": "https://img3.wallspic.com/previews/9/1/6/6/5/156619/156619-juice-smoothie-watermelon-fruit-muskmelon-550x310.jpg"
     },
     {
@@ -168,6 +186,7 @@
         "rating": 4.4,
         "badge": "ORGANIC",
         "category": "Vegetable",
+        "description": "Tender and nutrient-dense fresh spinach leaves. Ideal for salads, cooking, or adding to green smoothies.",
         "img": "https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Ch=1380%2Cq=85%2Cw=2000/wp-content/uploads/fresh-spinach-day.jpg"
     },
     {
@@ -177,6 +196,7 @@
         "rating": 4.8,
         "badge": "PRO",
         "category": "Dairy",
+        "description": "Thick and creamy Greek yogurt, packed with probiotics and protein. A perfect healthy breakfast or snack option.",
         "img": "https://www.biggerbolderbaking.com/wp-content/uploads/2025/04/Greek-Yogurt-thumbnail.jpg"
     },
     {
@@ -186,6 +206,7 @@
         "rating": 4.6,
         "badge": "",
         "category": "Bakery",
+        "description": "Artisanal sourdough bread with a crispy crust and chewy texture. Fermented to perfection for a distinct tangy flavor.",
         "img": "https://www.allrecipes.com/thmb/GPqr9kEn84Kj00QL56aObbv1ci0=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/260540-Chef-Johns-Sourdough-Bread-DDMFS-004-4x3-6791a75a5d804ec28424d04756054c5b.jpg"
     },
     {
@@ -195,6 +216,7 @@
         "rating": 4.9,
         "badge": "FRESH",
         "category": "Seafood",
+        "description": "Premium fresh salmon fillets, rich in Omega-3 fatty acids. Delicious whether grilled, baked, or pan-seared.",
         "img": "https://assets.tendercuts.in/product/S/F/91074b9a-7de8-4df5-9a78-b090dc8cce0a.jpg"
     },
     {
@@ -204,6 +226,7 @@
         "rating": 4.5,
         "badge": "",
         "category": "Meat",
+        "description": "Lean and tender chicken breast cuts. High in protein and versatile for various recipes, from curries to salads.",
         "img": "https://www.everydaycheapskate.com/wp-content/uploads/20250407-how-to-cook-boneless-skinless-chicken-breast-on-a-cutting-board-with-thyme-garlic-and-red-peppercorns.png"
     },
     {
@@ -213,6 +236,7 @@
         "rating": 4.3,
         "badge": "",
         "category": "Fruit",
+        "description": "Sweet and seedless green grapes. A refreshing and healthy snack for any time of the day.",
         "img": "https://www.fruitsmith.com/pub/media/catalog/product/cache/121e3c4dcffca7e7d42866fdac9b02cf/m/u/muscat-1_1.jpg"
     },
     {
@@ -222,6 +246,7 @@
         "rating": 4.2,
         "badge": "VEGAN",
         "category": "Dairy",
+        "description": "Firm silken tofu block, an excellent plant-based protein source. Absorbs flavors well, making it great for curries and stir-fries.",
         "img": "https://thumbs.dreamstime.com/b/sliced-block-tofu-hard-white-tofu-soy-bean-curd-wooden-plate-sliced-block-tofu-416705802.jpg"
     },
     {
@@ -231,6 +256,7 @@
         "rating": 4.8,
         "badge": "COLD",
         "category": "Ice Cream",
+        "description": "Creamy and rich vanilla bean ice cream. Made with real vanilla pods for a luxurious classic dessert.",
         "img": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -240,6 +266,7 @@
         "rating": 4.6,
         "badge": "BESTSELLER",
         "category": "Ice Cream",
+        "description": "Indulgent chocolate fudge cone, filled with rich chocolate ice cream and topped with crunchy nuts.",
         "img": "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -249,6 +276,7 @@
         "rating": 4.4,
         "badge": "",
         "category": "Ice Cream",
+        "description": "Sweet strawberry ice cream scoop made with real fruit puree. A delightful pink treat for berry lovers.",
         "img": "https://cdn.shopify.com/s/files/1/0869/4051/6536/files/Strawberry-Dessert-1536x863.jpg?v=1740566284"
     },
     {
@@ -258,6 +286,7 @@
         "rating": 4.9,
         "badge": "ESSENTIAL",
         "category": "Baby Care",
+        "description": "Soft, absorbent, and rash-free baby diapers. Designed for maximum comfort and leak protection for your little one.",
         "img": "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -267,6 +296,7 @@
         "rating": 4.7,
         "badge": "ORGANIC",
         "category": "Baby Care",
+        "description": "Organic and preservative-free baby puree. A nutritious and easy-to-digest meal option for infants.",
         "img": "https://t4.ftcdn.net/jpg/01/78/43/65/360_F_178436569_dcpIqbhbLWYdFPIqNlXucjmPZRNJFasj.jpg"
     },
     {
@@ -276,6 +306,7 @@
         "rating": 4.5,
         "badge": "-10%",
         "category": "Baby Care",
+        "description": "Gentle and alcohol-free baby wipes. Infused with aloe vera to clean and soothe your baby's delicate skin.",
         "img": "https://prehealthcare.in/wp-content/uploads/2024/09/himalaya-baby-wipes_main.png"
     },
     {
@@ -285,6 +316,7 @@
         "rating": 4.8,
         "badge": "HOT",
         "category": "Pet Food",
+        "description": "Balanced and nutritious premium dog food. Formulated to support energy, coat health, and digestion for your furry friend.",
         "img": "https://thumbs.dreamstime.com/b/dog-food-bowl-white-background-pet-granules-close-up-brown-dry-snack-puppy-kitten-animal-feed-pile-dish-healthy-meal-396728334.jpg"
     },
     {
@@ -294,6 +326,7 @@
         "rating": 4.6,
         "badge": "",
         "category": "Pet Food",
+        "description": "Gourmet tuna feast for cats. Rich in protein and essential taurine to keep your feline happy and healthy.",
         "img": "https://m.media-amazon.com/images/I/7187KhXIy-S.jpg"
     },
     {
@@ -303,6 +336,7 @@
         "rating": 4.3,
         "badge": "NEW",
         "category": "Pet Food",
+        "description": "Delicious chewy treats for dogs. Great for training or as a special reward to keep tails wagging.",
         "img": "https://headsupfortails.com/cdn/shop/articles/SoftChewy-Crunchy-TreatsBanner_9b2e5dc6-5016-48fd-991a-6eb6fce16b40.jpg?v=1753177795"
     },
     {
@@ -312,6 +346,7 @@
         "rating": 4.5,
         "badge": "CRUNCHY",
         "category": "Snacks",
+        "description": "Classic salted potato chips, crispy and addictive. The ultimate party snack or side for your sandwich.",
         "img": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -321,6 +356,7 @@
         "rating": 4.7,
         "badge": "MOVIE NIGHT",
         "category": "Snacks",
+        "description": "Light and fluffy salted popcorn. The perfect companion for your movie nights and binge-watching sessions.",
         "img": "https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&fit=crop&w=800&q=80"
     },
     {
@@ -330,6 +366,7 @@
         "rating": 4.8,
         "badge": "SWEET",
         "category": "Snacks",
+        "description": "Crunchy chocolate chip cookies baked to perfection. Loaded with chocolate chunks for a sweet delight.",
         "img": "https://bakewithshivesh.com/wp-content/uploads/2020/09/IMG-8129-1-scaled.jpg"
     },
     {
@@ -339,6 +376,97 @@
         "rating": 4.9,
         "badge": "HEALTHY",
         "category": "Snacks",
+        "description": "A mix of premium roasted nuts including almonds, cashews, and hazelnuts. A powerhouse of energy and nutrition.",
         "img": "https://cdn.jwplayer.com/v2/media/zY0HTnqf/thumbnails/NiPBPhov.jpg?width=1280"
+    },
+    {
+        "id": 39,
+        "name": "Fresh Mutton Curry Cut",
+        "price": "₹800",
+        "rating": 4.7,
+        "badge": "FRESH",
+        "category": "Meat",
+        "description": "Tender and flavorful free-range mutton, expertly cut for curries. Perfect for slow-cooking to achieve a melt-in-the-mouth texture.",
+        "img": "https://naturessouldeli.com/cdn/shop/files/20339606-1729682430857.jpg?v=1729751015"
+    },
+    {
+        "id": 40,
+        "name": "Smoked Pork Ribs",
+        "price": "₹650",
+        "rating": 4.8,
+        "badge": "PREMIUM",
+        "category": "Meat",
+        "description": "Succulent pork ribs with a smoky flavor. Ideal for barbecuing or roasting to perfection for a delicious family dinner.",
+        "img": "https://grilling24x7.com/wp-content/uploads/sites/2/2021/05/DSC08385.jpg"
+    },
+    {
+        "id": 41,
+        "name": "Beef Steak Cuts",
+        "price": "₹550",
+        "rating": 4.6,
+        "badge": "",
+        "category": "Meat",
+        "description": "Premium quality beef steak cuts, rich in flavor and tenderness. Best served grilled with your favorite sides.",
+        "img": "https://hips.hearstapps.com/hmg-prod/images/how-to-cook-steak-in-the-oven-index-66a3eda7b9f52.jpg"
+    },
+    {
+        "id": 42,
+        "name": "Classic Cheese Burger",
+        "price": "₹150",
+        "rating": 4.5,
+        "badge": "HOT",
+        "category": "Fast Food",
+        "description": "Juicy grilled beef patty topped with melted cheddar cheese, fresh lettuce, and tomatoes. Served on a toasted sesame bun.",
+        "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 43,
+        "name": "Spicy Chicken Wrap",
+        "price": "₹180",
+        "rating": 4.6,
+        "badge": "SPICY",
+        "category": "Fast Food",
+        "description": "Crispy fried chicken strips wrapped in a soft tortilla with spicy mayo, crunchy lettuce, and pickles.",
+        "img": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 44,
+        "name": "Loaded Cheesy Fries",
+        "price": "₹120",
+        "rating": 4.8,
+        "badge": "MUST TRY",
+        "category": "Fast Food",
+        "description": "Golden crispy fries smothered in rich cheese sauce, bacon bits, and jalapenos. The ultimate comfort food.",
+        "img": "https://static.vecteezy.com/system/resources/thumbnails/025/260/421/small/stack-of-crispy-fries-and-juicy-meat-generated-by-ai-free-photo.jpg"
+    },
+    {
+        "id": 45,
+        "name": "Jumbo Prawns",
+        "price": "₹650",
+        "rating": 4.8,
+        "badge": "FRESH",
+        "category": "Seafood",
+        "description": "Large, succulent jumbo prawns, cleaned and deveined. Perfect for grilling, curries, or a classic garlic butter stir-fry.",
+        "img": "https://www.irishexaminer.com/cms_media/module_img/4945/2472800_1_articlelarge_iStock-564605044.jpg"
+    },
+    {
+        "id": 46,
+        "name": "Fresh Blue Crab",
+        "price": "₹450",
+        "rating": 4.5,
+        "badge": "",
+        "category": "Seafood",
+        "description": "Freshly caught blue crabs with sweet and tender meat. Excellent for crab cakes, bisques, or spicy crab curry.",
+        "img": "https://static.vecteezy.com/system/resources/previews/005/930/401/large_2x/raw-crab-on-ice-with-spices-lemon-and-salad-lettuce-on-the-dark-plate-background-fresh-crab-for-cooked-food-at-restaurant-or-seafood-market-blue-swimming-crab-free-photo.JPG"
+    },
+    {
+        "id": 47,
+        "name": "Lobster Tail",
+        "price": "₹1200",
+        "rating": 4.9,
+        "badge": "LUXURY",
+        "category": "Seafood",
+        "description": "Premium cold-water lobster tails with rich, firm meat. The ultimate indulgence for a special gourmet dinner at home.",
+        "img": "https://cdn.shopify.com/s/files/1/0647/8410/5716/files/20250516145823-lobster-tail-recipe-lifestyle.jpg?v=1747407505"
     }
 ]

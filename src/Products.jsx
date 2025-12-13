@@ -19,7 +19,7 @@ const Products = () => {
     const [selectedCategory, setSelectedCategory] = React.useState(categoryParam || "All");
     const dropdownRef = React.useRef(null);
 
-    const categories = ["All", "Vegetable", "Fruit", "Juice", "Dairy", "Bakery", "Meat", "Seafood", "Ice Cream", "Baby Care", "Pet Food", "Snacks"];
+    const categories = ["All", "Vegetable", "Fruit", "Juice", "Dairy", "Bakery", "Meat", "Seafood", "Ice Cream", "Fast Food", "Baby Care", "Pet Food", "Snacks"];
 
     const sortedCategories = React.useMemo(() => {
         const targetCategory = categoryParam;
@@ -191,25 +191,30 @@ const Products = () => {
                 {filteredProducts.map((product) => (
                     <div className="product-card" key={product.id}>
                         {product.badge && <span className="product-badge">{product.badge}</span>}
-                        <div className="product-img-wrapper">
-                            <img src={product.img} alt={product.name} />
-                            <button
-                                className="wishlist-icon-btn"
-                                onClick={() => toggleWishlist(product)}
-                                style={{
-                                    color: isInWishlist(product.id) ? 'var(--accent-red)' : 'var(--text-secondary)'
-                                }}
-                            >
-                                <i className={`${isInWishlist(product.id) ? 'fa-solid' : 'fa-regular'} fa-heart`}></i>
-                            </button>
-                        </div>
+                        <Link to={`/product/${product.id}`} className="product-card-link">
+                            <div className="product-img-wrapper">
+                                <img src={product.img} alt={product.name} />
+                                <button
+                                    className="wishlist-icon-btn"
+                                    onClick={(e) => {
+                                        e.preventDefault(); // Prevent navigation when clicking wishlist
+                                        toggleWishlist(product);
+                                    }}
+                                    style={{
+                                        color: isInWishlist(product.id) ? 'var(--accent-red)' : 'var(--text-secondary)'
+                                    }}
+                                >
+                                    <i className={`${isInWishlist(product.id) ? 'fa-solid' : 'fa-regular'} fa-heart`}></i>
+                                </button>
+                            </div>
+                        </Link>
                         <div className="product-info">
                             <div className="product-rating">
                                 {[...Array(5)].map((_, i) => (
                                     <i key={i} className={`fa-star ${i < Math.floor(product.rating) ? "fa-solid" : "fa-regular"}`}></i>
                                 ))}
                             </div>
-                            <h3>{product.name}</h3>
+                            <Link to={`/product/${product.id}`}><h3>{product.name}</h3></Link>
                             <div className="product-footer">
                                 <span className="product-price">{product.price}</span>
                                 <button className="add-btn" onClick={() => addToCart(product)}>

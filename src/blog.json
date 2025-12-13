@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "category": "Farm Stories",
+        "img": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1738&auto=format&fit=crop",
+        "date": "Oct 15, 2025",
+        "title": "Meet the Farmers Behind Your Morning Coffee",
+        "excerpt": "A journey into the sustainable practices of our local coffee bean suppliers in Coorg.",
+        "content": "<p>Coffee cultivation in Coorg is more than just a business; it's a legacy passed down through generations. In this exclusive feature, we take you behind the scenes to meet the dedicated farmers who wake up before dawn to tend to their lush plantations.</p><p>We explore their sustainable farming practices, from shade-grown coffee that preserves biodiversity to organic composting methods that enrich the soil without harmful chemicals.</p><h3>The Art of Picking</h3><p>Learn why hand-picking only the ripest red cherries makes a world of difference in the flavor profile of your morning cup. Our partner farmers explain the meticulous process that ensures only the best beans make it to the roasting drum.</p>",
+        "author": "Sarah Green",
+        "readTime": "6 min"
+    },
+    {
+        "id": 2,
+        "category": "Sustainability",
+        "img": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1613&auto=format&fit=crop",
+        "date": "Oct 12, 2025",
+        "title": "Zero Waste Kitchen: Simple Swaps for 2025",
+        "excerpt": "Easy actionable steps to reduce food waste and plastic usage in your daily cooking routine.",
+        "content": "<p>Reducing waste in the kitchen doesn't have to be overwhelming. Start small with these impactful swaps that can drastically cut down your household's carbon footprint.</p><h3>1. Ditch the Plastic Wrap</h3><p>Beeswax wraps are a fantastic, reusable alternative to single-use plastic cling film. They keep food fresh longer and look great too.</p><h3>2. Compost Your Scraps</h3><p>Even if you live in an apartment, bokashi bins or vermicomposting can turn your vegetable peels into nutrient-rich gold for your balcony plants.</p><p>Join the movement towards a greener planet, one meal at a time.</p>",
+        "author": "David Eco",
+        "readTime": "4 min"
+    },
+    {
+        "id": 3,
+        "category": "Recipes",
+        "img": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=1671&auto=format&fit=crop",
+        "date": "Oct 10, 2025",
+        "title": "Traditional Spicy Vegetable Curry",
+        "excerpt": "Warm your soul with this authentic family recipe passed down through generations.",
+        "content": "<p>There's nothing quite like the aroma of spices roasting in a hot pan. This traditional vegetable curry recipe has been a Sunday staple in my family for decades.</p><h3>Ingredients</h3><ul><li>2 cups mixed vegetables (carrots, peas, potatoes)</li><li>1 large onion, chopped</li><li>2 tomatoes, pureed</li><li>1 tbsp ginger-garlic paste</li><li>Spices: Turmeric, Red Chili powder, Garam Masala</li></ul><h3>Method</h3><p>Sauté onions until golden brown. Add the ginger-garlic paste and cook until fragrant. Pour in the tomato puree and spices, cooking until the oil separates. Toss in your veggies and simmer until tender. Serve hot with steamed rice or fresh naan.</p>",
+        "author": "Priya Cook",
+        "readTime": "8 min"
+    },
+    {
+        "id": 4,
+        "category": "Recipes",
+        "img": "https://vegnews.com/media/W1siZiIsIjQ1NTUyL1ZlZ25ld3MuQmFuYW5hQ3JlYW1QaWVTbW9vdGhpZUJvd2wuRW1pbGllRWF0cy5qcGciXSxbInAiLCJjcm9wX3Jlc2l6ZWQiLCIxMDIweDYwMyswKzEyIiwiMTM2MHg4MDReIix7ImZvcm1hdCI6ImpwZyJ9XSxbInAiLCJvcHRpbWl6ZSJdXQ/Vegnews.BananaCreamPieSmoothieBowl.EmilieEats.jpg?sha=81e7754be51906ca",
+        "date": "Oct 22, 2025",
+        "title": "5 Energizing Smoothie Bowls to Start Your Day",
+        "excerpt": "Discover the perfect blend of fruits, seeds, and greens to kickstart your morning with a burst of energy and flavor.",
+        "content": "<p>Smoothie bowls are more than just a pretty Instagram trend; they are a powerhouse of nutrition. Here are 5 delicious combinations to fuel your mornings.</p><h3>1. The Green Machine</h3><p>Spinach, banana, pineapple, and coconut water. Topped with chia seeds for that extra crunch.</p><h3>2. Berry Blast</h3><p>Mixed berries, yogurt, and a dash of honey. Antioxidant-rich and incredibly refreshing.</p><h3>3. Tropical Paradise</h3><p>Mango, papaya, and turmeric. A golden bowl of sunshine to brighten your mood.</p><p>Experiment with toppings like granola, nuts, and edible flowers to make breakfast your favorite meal of the day.</p>",
+        "author": "Lisa Fit",
+        "readTime": "5 min"
+    },
+    {
+        "id": 5,
+        "category": "Health",
+        "img": "https://media.istockphoto.com/id/1300836710/photo/crop-shot-of-plate-with-colorful-healthy-sliced-vegetables-and-dips.jpg?s=612x612&w=0&k=20&c=n78ffFNdqTX_DWQoQ7ghyjlfvLxZGOHuQUa_CDjLgRs=",
+        "date": "Oct 20, 2025",
+        "title": "Why \"Eat the Rainbow\" is More Than Just a Saying",
+        "excerpt": "Understanding phytonutrients and why colorful plates lead to better heart health and immunity.",
+        "content": "<p>You've heard it before: eat your greens. But what about your reds, purples, and oranges? Each color in fruits and vegetables represents different phytonutrients essential for your health.</p><h3>Red</h3><p>Tomatoes and watermelon contain lycopene, crucial for heart health.</p><h3>Purple</h3><p>Blueberries and eggplant are packed with anthocyanins, powerful antioxidants that protect your cells.</p><h3>Orange</h3><p>Carrots and sweet potatoes are rich in beta-carotene, vital for vision and immunity.</p><p>Aim to include at least 3 different colors on your plate at every meal for optimal nutrition.</p>",
+        "author": "Dr. Wellness",
+        "readTime": "7 min"
+    },
+    {
+        "id": 6,
+        "category": "Tips",
+        "img": "https://booksbyrobricewinter.com/wp-content/uploads/2025/08/guide-for-tip.jpg",
+        "date": "Oct 18, 2025",
+        "title": "Smart Grocery Shopping: A Beginner's Guide",
+        "excerpt": "How to navigate the aisles, read labels effectively, and save money while buying high-quality organic produce.",
+        "content": "<p>Grocery shopping can be overwhelming with so many choices. Here's how to shop smarter, not harder.</p><h3>1. Make a List</h3><p>Stick to a list to avoid impulse buys that drive up your bill and lead to food waste.</p><h3>2. Shop the Perimeter</h3><p>The freshest foods—produce, dairy, meat—are usually arranged around the store's perimeter, while processed foods clutter the center aisles.</p><h3>3. Read Labels</h3><p>Don't be fooled by front-of-package marketing. Check the ingredients list. If you can't pronounce it, you probably shouldn't eat it.</p>",
+        "author": "Budget Guru",
+        "readTime": "6 min"
+    },
+    {
+        "id": 7,
+        "category": "Sustainability",
+        "img": "https://i.ytimg.com/vi/AbJaQlHD1KQ/hq720.jpg",
+        "date": "Sep 28, 2025",
+        "title": "Composting 101: Turning Scraps into Gold",
+        "excerpt": "Learn the basics of composting at home, even if you live in a small apartment.",
+        "content": "<p>Composting is nature's way of recycling. It turns organic waste into nutrient-rich soil conditioner.</p><h3>What to Compost:</h3><ul><li>Fruit and vegetable scraps</li><li>Coffee grounds and tea bags</li><li>Eggshells</li><li>Dry leaves and cardboard</li></ul><h3>What to Avoid:</h3><p>Meat, dairy, and oils can attract pests and create bad odors in a home compost bin.</p><p>With patience and the right balance of 'greens' and 'browns', you'll have black gold for your garden in no time.</p>",
+        "author": "Eco Warrior",
+        "readTime": "5 min"
+    },
+    {
+        "id": 8,
+        "category": "Farm Stories",
+        "img": "https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "date": "Sep 25, 2025",
+        "title": "Harvest Season: A Day in the Life",
+        "excerpt": "Follow our team as we harvest the season's freshest pumpkins and squash.",
+        "content": "<p>The air is crisp, and the fields are dotted with orange. It's harvest season at MasterKart's partner farms.</p><p>Our day starts at 4 AM. By sunrise, the team is in the fields, carefully selecting each pumpkin by hand. We look for firm rinds and sturdy stems, ensuring they will last through the season.</p><p>It's hard work, but seeing the truckloads of fresh produce heading to your homes makes it all worth it.</p>",
+        "author": "Farmer John",
+        "readTime": "4 min"
+    },
+    {
+        "id": 9,
+        "category": "Health Tips",
+        "img": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "date": "Sep 20, 2025",
+        "title": "Benefits of Plant-Based Milk Alternatives",
+        "excerpt": "Comparing almond, oat, soy, and coconut milk to find the best fit for your diet.",
+        "content": "<p>Thinking of switching from dairy? The plant-based milk aisle has exploded with options.</p><h3>Almond Milk</h3><p>Light and nutty. Great for cereals but low in protein.</p><h3>Oat Milk</h3><p>Creamy and sweet. The best sustainable choice for coffee lovers.</p><h3>Soy Milk</h3><p>Nutritionally closest to cow's milk, packed with protein.</p><p>Choose the one that fits your taste and nutritional needs best.</p>",
+        "author": "Nutritionist Ann",
+        "readTime": "5 min"
+    },
+    {
+        "id": 10,
+        "category": "Recipes",
+        "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "date": "Sep 15, 2025",
+        "title": "Zesty Lemon & Quinoa Salad",
+        "excerpt": "A refreshing, protein-packed salad perfect for quick lunches or side dishes.",
+        "content": "<p>Looking for a lunch that won't make you sleepy? This quinoa salad is the answer.</p><h3>Ingredients</h3><ul><li>1 cup cooked quinoa</li><li>Juice of 2 lemons</li><li>Cucumber, cherry tomatoes, and parsley</li><li>Olive oil, salt, and pepper</li></ul><h3>Method</h3><p>Whisk the lemon juice and olive oil. Toss with the cooked quinoa and chopped veggies. Let it sit for 30 minutes for the flavors to meld. Serve chilled.</p>",
+        "author": "Chef Mike",
+        "readTime": "3 min"
+    },
+    {
+        "id": 11,
+        "category": "Tips",
+        "img": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "date": "Sep 10, 2025",
+        "title": "Meal Prepping for Busy Weekdays",
+        "excerpt": "Save time and money by prepping these 5 healthy meals on Sunday night.",
+        "content": "<p>Meal prepping is the secret weapon of busy professionals.</p><p>Spend 2 hours on Sunday chopping vegetables, cooking grains, and roasting proteins. Store them in glass containers.</p><p>During the week, simply mix and match components to create grain bowls, wraps, or stir-fries in minutes. You'll save money on takeout and eat healthier too.</p>",
+        "author": "Life Hacker",
+        "readTime": "6 min"
+    },
+    {
+        "id": 12,
+        "category": "Farm Stories",
+        "img": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "date": "Sep 05, 2025",
+        "title": "From Seed to Table: The Strawberry Journey",
+        "excerpt": "Tracing the path of our organic strawberries from planting to your dessert bowl.",
+        "content": "<p>Have you ever wondered how strawberries get to your table so sweet and red?</p><p>It starts with selecting the right variety for our climate. We plant in nutrient-rich soil and use natural pest control methods like ladybugs.</p><p>Harvesting happens in the cool early morning to preserve freshness. Within 24 hours, they are packed and on their way to you, ensuring maximum flavor and nutrition.</p>",
+        "author": "Berry Fields",
+        "readTime": "4 min"
+    }
+]
