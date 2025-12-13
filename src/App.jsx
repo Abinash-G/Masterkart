@@ -24,7 +24,7 @@ const ScrollToTop = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Masterkart/">
       <ScrollToTop />
       <Routes>
         {/* Pages inside the Main Layout (Nav) */}
