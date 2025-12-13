@@ -185,7 +185,7 @@ const Blog = () => {
                                         <div className="blog-date"><i className="fa-regular fa-calendar"></i> {post.date}</div>
                                         <h2 className="blog-title">{post.title}</h2>
                                         <p className="blog-excerpt">{post.excerpt}</p>
-                                        <a href="#" className="read-more">Read Article <i className="fa-solid fa-arrow-right"></i></a>
+                                        <a href="#" className="read-more">Read Article</a>
                                     </div>
                                 </article>
                             ))
