@@ -1,0 +1,344 @@
+[
+    {
+        "id": 1,
+        "name": "Fresh Red Apple",
+        "price": "₹180",
+        "rating": 4.5,
+        "badge": "HOT",
+        "category": "Fruit",
+        "img": "https://www.bbassets.com/media/uploads/p/l/40033817_11-fresho-apple-green-regular.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Organic Broccoli",
+        "price": "₹120",
+        "rating": 4.0,
+        "badge": "",
+        "category": "Vegetable",
+        "img": "https://www.allrecipes.com/thmb/zubQvhsfRJO8K5SnyqimqyKrG1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8760150-How-to-Steam-Broccoli-ddmfs-7559-4x3-beauty-b270504788b64c51996dfcf3d61fcab9.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Fresh Milk 1L",
+        "price": "₹75",
+        "rating": 5.0,
+        "badge": "-15%",
+        "category": "Dairy",
+        "img": "https://dairynutrition.ca/sites/dairynutrition/files/image_file_browser/dn_article/2023-03/shutterstock_4305538_1182x788px.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Juicy Orange",
+        "price": "₹250",
+        "rating": 4.8,
+        "badge": "",
+        "category": "Fruit",
+        "img": "https://t3.ftcdn.net/jpg/15/22/58/88/360_F_1522588854_lTBbT8XB5j1vBlRw6ogdYwFqQBGvbO4x.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Organic Bananas",
+        "price": "₹60",
+        "rating": 4.2,
+        "badge": "NEW",
+        "category": "Fruit",
+        "img": "https://nutriscan.app/calories-nutrition/images/banana-7h4m9.webp"
+    },
+    {
+        "id": 6,
+        "name": "Red Strawberries",
+        "price": "₹350",
+        "rating": 4.9,
+        "badge": "",
+        "category": "Fruit",
+        "img": "https://groffer.in/wp-content/uploads/2025/02/strw.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Fresh Tomatoes",
+        "price": "₹40",
+        "rating": 4.3,
+        "badge": "",
+        "category": "Vegetable",
+        "img": "https://img.freepik.com/free-photo/top-view-ripe-fresh-tomatoes-with-water-drops-black-background_141793-3432.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Green Bell Pepper",
+        "price": "₹80",
+        "rating": 4.0,
+        "badge": "",
+        "category": "Vegetable",
+        "img": "https://youasacook.com/wp-content/uploads/2013/08/dsc_0211.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Organic Carrots",
+        "price": "₹90",
+        "rating": 4.6,
+        "badge": "FRESH",
+        "category": "Vegetable",
+        "img": "https://www.trustbasket.com/cdn/shop/articles/Carrot.jpg?v=1688378789"
+    },
+    {
+        "id": 10,
+        "name": "Farm Fresh Eggs",
+        "price": "₹180",
+        "rating": 4.7,
+        "badge": "HOT",
+        "category": "Dairy",
+        "img": "https://media.post.rvohealth.io/wp-content/uploads/2020/09/health-benefits-of-eggs-732x549-thumbnail-732x549.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Whole Wheat Bread",
+        "price": "₹55",
+        "rating": 4.4,
+        "badge": "",
+        "category": "Bakery",
+        "img": "/whole_wheat_bread.png"
+    },
+    {
+        "id": 12,
+        "name": "Cheddar Cheese",
+        "price": "₹380",
+        "rating": 4.8,
+        "badge": "-10%",
+        "category": "Dairy",
+        "img": "/cheddar_cheese.png"
+    },
+    {
+        "id": 13,
+        "name": "Fresh Potatoes",
+        "price": "₹50",
+        "rating": 4.2,
+        "badge": "",
+        "category": "Vegetable",
+        "img": "/fresh_potatoes.png"
+    },
+    {
+        "id": 14,
+        "name": "Orange Juice",
+        "price": "₹150",
+        "rating": 4.7,
+        "badge": "HOT",
+        "category": "Juice",
+        "img": "https://www.lovefoodhatewaste.com/sites/default/files/styles/16_9_two_column/public/2022-08/Fruit-juice-sh1489857866.jpg.webp?itok=pdFMoZ6P"
+    },
+    {
+        "id": 15,
+        "name": "Strawberry Juice",
+        "price": "₹180",
+        "rating": 4.7,
+        "badge": "",
+        "category": "Juice",
+        "img": "https://www.cleaneatingkitchen.com/wp-content/uploads/2022/05/strawberry-juice-in-pretty-glass.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Apple Juice",
+        "price": "₹160",
+        "rating": 4.7,
+        "badge": "",
+        "category": "Juice",
+        "img": "https://www.allrecipes.com/thmb/OaPfxDvr0nl72mkN_qoiVSs529E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/218977-fresh-homemade-apple-juice-ddmfs-3x4-13004-121387bb131642e4839124d261b11094.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Citrus Juice",
+        "price": "₹140",
+        "rating": 4.7,
+        "badge": "",
+        "category": "Juice",
+        "img": "https://assets.epicurious.com/photos/656a0efa2448d72ec8548b61/16:9/w_4445,h_2500,c_limit/how-far-in-advance-can-you-squeeze-citrus_HERO_111523_5290_VOG_final.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Watermelon Juice",
+        "price": "₹120",
+        "rating": 4.7,
+        "badge": "",
+        "category": "Juice",
+        "img": "https://img3.wallspic.com/previews/9/1/6/6/5/156619/156619-juice-smoothie-watermelon-fruit-muskmelon-550x310.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Fresh Spinach",
+        "price": "₹45",
+        "rating": 4.4,
+        "badge": "ORGANIC",
+        "category": "Vegetable",
+        "img": "https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Ch=1380%2Cq=85%2Cw=2000/wp-content/uploads/fresh-spinach-day.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Greek Yogurt",
+        "price": "₹85",
+        "rating": 4.8,
+        "badge": "PRO",
+        "category": "Dairy",
+        "img": "https://www.biggerbolderbaking.com/wp-content/uploads/2025/04/Greek-Yogurt-thumbnail.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Sourdough Bread",
+        "price": "₹120",
+        "rating": 4.6,
+        "badge": "",
+        "category": "Bakery",
+        "img": "https://www.allrecipes.com/thmb/GPqr9kEn84Kj00QL56aObbv1ci0=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/260540-Chef-Johns-Sourdough-Bread-DDMFS-004-4x3-6791a75a5d804ec28424d04756054c5b.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Fresh Salmon",
+        "price": "₹950",
+        "rating": 4.9,
+        "badge": "FRESH",
+        "category": "Seafood",
+        "img": "https://assets.tendercuts.in/product/S/F/91074b9a-7de8-4df5-9a78-b090dc8cce0a.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Chicken Breast",
+        "price": "₹320",
+        "rating": 4.5,
+        "badge": "",
+        "category": "Meat",
+        "img": "https://www.everydaycheapskate.com/wp-content/uploads/20250407-how-to-cook-boneless-skinless-chicken-breast-on-a-cutting-board-with-thyme-garlic-and-red-peppercorns.png"
+    },
+    {
+        "id": 24,
+        "name": "Green Grapes",
+        "price": "₹140",
+        "rating": 4.3,
+        "badge": "",
+        "category": "Fruit",
+        "img": "https://www.fruitsmith.com/pub/media/catalog/product/cache/121e3c4dcffca7e7d42866fdac9b02cf/m/u/muscat-1_1.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Tofu Block",
+        "price": "₹95",
+        "rating": 4.2,
+        "badge": "VEGAN",
+        "category": "Dairy",
+        "img": "https://thumbs.dreamstime.com/b/sliced-block-tofu-hard-white-tofu-soy-bean-curd-wooden-plate-sliced-block-tofu-416705802.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Vanilla Bean Tub",
+        "price": "₹280",
+        "rating": 4.8,
+        "badge": "COLD",
+        "category": "Ice Cream",
+        "img": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 27,
+        "name": "Chocolate Fudge Cone",
+        "price": "₹70",
+        "rating": 4.6,
+        "badge": "BESTSELLER",
+        "category": "Ice Cream",
+        "img": "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 28,
+        "name": "Strawberry Scoop",
+        "price": "₹150",
+        "rating": 4.4,
+        "badge": "",
+        "category": "Ice Cream",
+        "img": "https://cdn.shopify.com/s/files/1/0869/4051/6536/files/Strawberry-Dessert-1536x863.jpg?v=1740566284"
+    },
+    {
+        "id": 29,
+        "name": "Soft Baby Diapers",
+        "price": "₹650",
+        "rating": 4.9,
+        "badge": "ESSENTIAL",
+        "category": "Baby Care",
+        "img": "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 30,
+        "name": "Organic Baby Puree",
+        "price": "₹120",
+        "rating": 4.7,
+        "badge": "ORGANIC",
+        "category": "Baby Care",
+        "img": "https://t4.ftcdn.net/jpg/01/78/43/65/360_F_178436569_dcpIqbhbLWYdFPIqNlXucjmPZRNJFasj.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Gentle Baby Wipes",
+        "price": "₹180",
+        "rating": 4.5,
+        "badge": "-10%",
+        "category": "Baby Care",
+        "img": "https://prehealthcare.in/wp-content/uploads/2024/09/himalaya-baby-wipes_main.png"
+    },
+    {
+        "id": 32,
+        "name": "Premium Dog Food",
+        "price": "₹850",
+        "rating": 4.8,
+        "badge": "HOT",
+        "category": "Pet Food",
+        "img": "https://thumbs.dreamstime.com/b/dog-food-bowl-white-background-pet-granules-close-up-brown-dry-snack-puppy-kitten-animal-feed-pile-dish-healthy-meal-396728334.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Tuna Cat Feast",
+        "price": "₹110",
+        "rating": 4.6,
+        "badge": "",
+        "category": "Pet Food",
+        "img": "https://m.media-amazon.com/images/I/7187KhXIy-S.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Chewy Dog Treats",
+        "price": "₹250",
+        "rating": 4.3,
+        "badge": "NEW",
+        "category": "Pet Food",
+        "img": "https://headsupfortails.com/cdn/shop/articles/SoftChewy-Crunchy-TreatsBanner_9b2e5dc6-5016-48fd-991a-6eb6fce16b40.jpg?v=1753177795"
+    },
+    {
+        "id": 35,
+        "name": "Classic Potato Chips",
+        "price": "₹40",
+        "rating": 4.5,
+        "badge": "CRUNCHY",
+        "category": "Snacks",
+        "img": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 36,
+        "name": "Salted Popcorn",
+        "price": "₹85",
+        "rating": 4.7,
+        "badge": "MOVIE NIGHT",
+        "category": "Snacks",
+        "img": "https://images.unsplash.com/photo-1578849278619-e73505e9610f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 37,
+        "name": "Choco Chip Cookies",
+        "price": "₹120",
+        "rating": 4.8,
+        "badge": "SWEET",
+        "category": "Snacks",
+        "img": "https://bakewithshivesh.com/wp-content/uploads/2020/09/IMG-8129-1-scaled.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Roasted Mixed Nuts",
+        "price": "₹450",
+        "rating": 4.9,
+        "badge": "HEALTHY",
+        "category": "Snacks",
+        "img": "https://cdn.jwplayer.com/v2/media/zY0HTnqf/thumbnails/NiPBPhov.jpg?width=1280"
+    }
+]
