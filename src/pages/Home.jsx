@@ -323,7 +323,7 @@ const Home = () => {
               <span className="blog-date">Oct 15, 2025</span>
               <h4>Meet the Farmers Behind Your Morning Coffee</h4>
               <p>A journey into the sustainable practices of our local coffee bean suppliers in Coorg.</p>
-              <Link to="/blog" className="read-more">Read Article</Link>
+              <Link to="/blog/1" className="read-more">Read Article</Link>
             </div>
           </div>
           <div className="blog-card">
@@ -334,7 +334,7 @@ const Home = () => {
               <span className="blog-date">Oct 12, 2025</span>
               <h4>Zero Waste Kitchen: Simple Swaps for 2025</h4>
               <p>Easy actionable steps to reduce food waste and plastic usage in your daily cooking routine.</p>
-              <Link to="/blog" className="read-more">Read Article</Link>
+              <Link to="/blog/2" className="read-more">Read Article</Link>
             </div>
           </div>
           <div className="blog-card">
@@ -345,7 +345,7 @@ const Home = () => {
               <span className="blog-date">Oct 10, 2025</span>
               <h4>Traditional Spicy Vegetable Curry</h4>
               <p>Warm your soul with this authentic family recipe passed down through generations.</p>
-              <Link to="/blog" className="read-more">Read Article</Link>
+              <Link to="/blog/3" className="read-more">Read Article</Link>
             </div>
           </div>
         </div>
