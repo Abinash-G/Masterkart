@@ -1,9 +1,19 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
+    const { hash } = useLocation();
+
     useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+        if (hash) {
+            const element = document.getElementById(hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }, [hash]);
 
     return (
         <div className="help-page">
@@ -181,6 +191,20 @@ const About = () => {
                             <li><strong>Quality Guarantee:</strong> Strict quality checks on all items.</li>
                             <li><strong>Eco-Friendly Packaging:</strong> We care for the planet.</li>
                             <li><strong>Fast Delivery:</strong> Get your groceries in record time.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="contact" className="help-section">
+                    <div className="help-icon"><i className="fa-solid fa-envelope"></i></div>
+                    <div className="help-content">
+                        <h2>Contact Us</h2>
+                        <p>We'd love to hear from you! Reach out to us for any queries, feedback, or support.</p>
+                        <ul className="help-list">
+                            <li><strong>Email:</strong> support@mastercart.com</li>
+                            <li><strong>Phone:</strong> +91 98765 43210</li>
+                            <li><strong>Address:</strong> 123, Green Street, Tech Park, Bangalore, India</li>
+                            <li><strong>Working Hours:</strong> Mon - Sat, 9 AM - 6 PM</li>
                         </ul>
                     </div>
                 </section>

@@ -316,7 +316,7 @@ const Nav = () => {
                             <li><Link to="/about">About Us</Link></li>
                             <li><Link to="/">Shop</Link></li>
                             <li><Link to="/blog">Blog</Link></li>
-                            <li><Link to="/">Contact</Link></li>
+                            <li><Link to="/about#contact">Contact</Link></li>
                         </ul>
                     </div>
                     <div className="footer-col">
