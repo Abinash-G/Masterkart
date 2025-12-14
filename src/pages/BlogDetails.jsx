@@ -266,8 +266,8 @@ const BlogDetails = () => {
             `}</style>
 
             <div className={`back-btn-container ${isScrolled ? 'scrolled-left' : ''}`}>
-                <button className="read-more-btn" onClick={() => navigate('/blog')}>
-                    <i className="fa-solid fa-arrow-left"></i> <span className="btn-text">Read More Blogs</span>
+                <button className="read-more-btn" onClick={() => navigate(-1)}>
+                    <i className="fa-solid fa-arrow-left"></i> <span className="btn-text">Back</span>
                 </button>
             </div>
 
