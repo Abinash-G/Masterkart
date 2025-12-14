@@ -214,7 +214,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 @media (max-width: 768px) {
 
                     .blog-details-wrapper {
-                        padding-top: 1rem;
+                        padding-top: 2rem;
                     }
                     
                     /* Adjust spacers since button is relative here */
