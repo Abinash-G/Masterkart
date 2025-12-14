@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext, useRef } from 'react';
 
 const CartContext = createContext();
 
@@ -15,6 +15,24 @@ export const CartProvider = ({ children }) => {
         const savedWishlist = localStorage.getItem('wishlistItems');
         return savedWishlist ? JSON.parse(savedWishlist) : [];
     });
+
+    // Toast State
+    const [toast, setToast] = useState({ show: false, message: '', type: '' });
+    const toastTimeoutRef = useRef(null);
+
+    const showToast = (message, type = 'success') => {
+        if (toastTimeoutRef.current) {
+            clearTimeout(toastTimeoutRef.current);
+        }
+        setToast({ show: true, message, type });
+        toastTimeoutRef.current = setTimeout(() => {
+            setToast({ show: false, message: '', type: '' });
+        }, 3000);
+    };
+
+    const hideToast = () => {
+        setToast({ show: false, message: '', type: '' });
+    };
 
     // Save to localStorage whenever state changes
     useEffect(() => {
@@ -36,8 +54,7 @@ export const CartProvider = ({ children }) => {
             }
             return [...prevItems, { ...product, quantity: 1 }];
         });
-        // Optional: Show a toast or alert
-        // alert(`${product.name} added to cart!`);
+        showToast('Added to Cart!', 'cart');
     };
 
     const removeFromCart = (productId) => {
@@ -55,10 +72,9 @@ export const CartProvider = ({ children }) => {
 
     // Wishlist Functions
     const addToWishlist = (product) => {
-        setWishlistItems(prevItems => {
-            if (prevItems.find(item => item.id === product.id)) return prevItems;
-            return [...prevItems, product];
-        });
+        if (wishlistItems.some(item => item.id === product.id)) return;
+        setWishlistItems(prevItems => [...prevItems, product]);
+        showToast('Added to Wishlist!', 'wishlist');
     };
 
     const removeFromWishlist = (productId) => {
@@ -87,7 +103,9 @@ export const CartProvider = ({ children }) => {
             addToWishlist,
             removeFromWishlist,
             isInWishlist,
-            toggleWishlist
+            toggleWishlist,
+            toast,
+            hideToast
         }}>
             {children}
         </CartContext.Provider>

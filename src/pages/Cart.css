@@ -325,10 +325,8 @@ header {
     min-height: 50vh;
 }
 
-.empty-cart i {
-    font-size: 4rem;
-    color: #ddd;
-    margin-bottom: 1rem;
+.empty-cart img {
+    margin-bottom: 1.5rem;
 }
 
 .empty-cart h2 {

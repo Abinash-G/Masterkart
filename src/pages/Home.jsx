@@ -5,7 +5,7 @@ import '../style.css';
 import productsData from '../data/products.json';
 
 const Home = () => {
-  const { addToCart, addToWishlist, isInWishlist } = useCart();
+  const { addToCart, addToWishlist, isInWishlist, toggleWishlist } = useCart();
 
   // Helper to count items per category
   const getCategoryCount = (categoryName) => {

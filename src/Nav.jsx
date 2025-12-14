@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, NavLink } from 'react-router-dom';
+import { useCart } from './CartContext';
 import './style.css';
 
+const ToastNotification = ({ toast }) => {
+    if (!toast.show) return null;
+    return (
+        <div className="toast-notification">
+            <i className={`fa-solid ${toast.type === 'wishlist' ? 'fa-heart' : 'fa-check-circle'}`}></i>
+            {toast.message}
+        </div>
+    );
+};
+
 const Nav = () => {
+    const { cartItems, wishlistItems, toast } = useCart();
     // --- DROPDOWN STATE ---
     const [isMoreOpen, setIsMoreOpen] = useState(false);
     const dropdownRef = React.useRef(null);
@@ -131,13 +143,25 @@ const Nav = () => {
                     </Link>
                     <Link to="/wishlist">
                         <div className="action-item">
-                            <i className="fa-regular fa-heart"></i>
+                            <div className="icon-badge-wrapper">
+                                <i className="fa-regular fa-heart"></i>
+                                {wishlistItems.length > 0 && (
+                                    <span className="nav-badge">{wishlistItems.length}</span>
+                                )}
+                            </div>
                             <span className="m-hide">Wishlist</span>
                         </div>
                     </Link>
                     <Link to="/cart">
                         <div className="action-item">
-                            <i className="fa-solid fa-bag-shopping"></i>
+                            <div className="icon-badge-wrapper">
+                                <i className="fa-solid fa-bag-shopping"></i>
+                                {cartItems.length > 0 && (
+                                    <span className="nav-badge">
+                                        {cartItems.reduce((acc, item) => acc + item.quantity, 0)}
+                                    </span>
+                                )}
+                            </div>
                             <span className="m-hide">Cart</span>
                         </div>
                     </Link>
@@ -318,6 +342,8 @@ const Nav = () => {
                     <p>&copy; 2025 MasterKart. All rights reserved.</p>
                 </div>
             </footer>
+
+            <ToastNotification toast={toast} />
         </>
     );
 };
