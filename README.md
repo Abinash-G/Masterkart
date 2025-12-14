@@ -33,11 +33,36 @@ Masterkart is a React-based e-commerce application built as a full utilization a
 ## 📂 Project Structure
 ```
 src/
- ├── components/
- ├── pages/
- ├── assets/
- ├── App.jsx
- └── index.js
+├── data/
+│   ├── blog.json
+│   └── products.json
+│
+├── pages/
+│   ├── Blog.css
+│   ├── Blog.jsx
+│   ├── BlogDetails.jsx
+│   ├── Cart.css
+│   ├── Cart.jsx
+│   ├── Categories.css
+│   ├── Categories.jsx
+│   ├── Deal.css
+│   ├── Deal.jsx
+│   ├── Home.jsx
+│   ├── Login.css
+│   ├── Login.jsx
+│   ├── ProductDetails.css
+│   ├── ProductDetails.jsx
+│   ├── Products.css
+│   ├── Products.jsx
+│   ├── Register.jsx
+│   ├── Wishlist.css
+│   └── Wishlist.jsx
+│
+├── App.jsx
+├── CartContext.jsx
+├── main.jsx
+├── Nav.jsx
+└── style.css
 ```
 
 ---
@@ -69,3 +94,4 @@ The application is deployed using GitHub Pages for fast and reliable hosting.
 - Masterkart → Fully utilized and extended version  
 - Improved component reuse and routing  
 - Cleaner and scalable frontend structure  
+
