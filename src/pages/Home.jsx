@@ -315,7 +315,7 @@ const Home = () => {
           <Link to="/blog">Read More <i className="fa-solid fa-arrow-right"></i></Link>
         </div>
         <div className="blog-grid">
-          <div className="blog-card">
+          <Link to="/blog/1" className="blog-card">
             <div className="blog-img">
               <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1738&auto=format&fit=crop" alt="Blog 1" />
             </div>
@@ -323,10 +323,10 @@ const Home = () => {
               <span className="blog-date">Oct 15, 2025</span>
               <h4>Meet the Farmers Behind Your Morning Coffee</h4>
               <p>A journey into the sustainable practices of our local coffee bean suppliers in Coorg.</p>
-              <Link to="/blog/1" className="read-more">Read Article</Link>
+              <span className="read-more">Read Article</span>
             </div>
-          </div>
-          <div className="blog-card">
+          </Link>
+          <Link to="/blog/2" className="blog-card">
             <div className="blog-img">
               <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1613&auto=format&fit=crop" alt="Blog 2" />
             </div>
@@ -334,10 +334,10 @@ const Home = () => {
               <span className="blog-date">Oct 12, 2025</span>
               <h4>Zero Waste Kitchen: Simple Swaps for 2025</h4>
               <p>Easy actionable steps to reduce food waste and plastic usage in your daily cooking routine.</p>
-              <Link to="/blog/2" className="read-more">Read Article</Link>
+              <span className="read-more">Read Article</span>
             </div>
-          </div>
-          <div className="blog-card">
+          </Link>
+          <Link to="/blog/3" className="blog-card">
             <div className="blog-img">
               <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=1671&auto=format&fit=crop" alt="Blog 3" />
             </div>
@@ -345,9 +345,9 @@ const Home = () => {
               <span className="blog-date">Oct 10, 2025</span>
               <h4>Traditional Spicy Vegetable Curry</h4>
               <p>Warm your soul with this authentic family recipe passed down through generations.</p>
-              <Link to="/blog/3" className="read-more">Read Article</Link>
+              <span className="read-more">Read Article</span>
             </div>
-          </div>
+          </Link>
         </div>
       </section >
 

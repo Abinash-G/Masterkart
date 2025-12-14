@@ -130,5 +130,16 @@
         "content": "<p>Have you ever wondered how strawberries get to your table so sweet and red?</p><p>It starts with selecting the right variety for our climate. We plant in nutrient-rich soil and use natural pest control methods like ladybugs.</p><p>Harvesting happens in the cool early morning to preserve freshness. Within 24 hours, they are packed and on their way to you, ensuring maximum flavor and nutrition.</p>",
         "author": "Berry Fields",
         "readTime": "4 min"
+    },
+    {
+        "id": 13,
+        "category": "Featured Story",
+        "img": "https://static.vecteezy.com/system/resources/previews/051/708/049/large_2x/a-diverse-collection-of-fresh-green-leafy-vegetables-photo.jpg",
+        "date": "Oct 24, 2025",
+        "title": "The Secret to Keeping Your Organic Greens Fresh for 2 Weeks",
+        "excerpt": "Stop throwing away wilted spinach! Discover the simple, scientifically-backed storage methods that chefs use to keep leafy greens crisp and vibrant for up to 14 days.",
+        "content": "<p>We've all been there: you buy a beautiful bunch of organic kale or spinach with the best intentions, only to find it slimy and wilted in the crisper drawer three days later. Food waste is a massive issue, but for leafy greens, it's almost entirely preventable with the right technique.</p><h3>The Enemy: Moisture and Air</h3><p>Greens wilt because they lose water (transpiration) or rot because they have too much surface moisture (oxidation/bacterial growth). The secret balance lies in <strong>humidity control</strong>.</p><h3>Step 1: Wash and Spin Dry</h3><p>Always wash your greens immediately. But more importantly, spin them BONE DRY. A salad spinner is non-negotiable here. Any water droplets left on the leaves will cause slimy rot.</p><h3>Step 2: The Paper Towel Trick</h3><p>Line a glass storage container or a reusable silicone bag with a dry paper towel (or a clean cotton tea towel). Place the greens loosely inside. Place another towel on top.</p><p>The towel absorbs excess moisture released by the leaves while maintaining a humid environment, keeping them crisp.</p><h3>Step 3: Give Them Air</h3><p>Don't seal the container 100% airtight if using plastic. If using a specialized produce keeper, open the vent. Greens release ethylene gas; trapping it speeds up aging.</p><p>By following these steps, our customers report keeping our farm-fresh spinach perfect for up to two weeks!</p>",
+        "author": "Sarah Green",
+        "readTime": "5 min"
     }
 ]

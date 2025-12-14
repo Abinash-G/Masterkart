@@ -21,7 +21,8 @@ const Blog = () => {
     }, [isDarkMode]);
 
     // Blog Data (Loaded from JSON)
-    const blogPosts = blogData;
+    // Exclude the featured story (ID: 13) from the main listing
+    const blogPosts = blogData.filter(post => post.id !== 13);
 
     // Filter & Pagination Logic
     const [currentPage, setCurrentPage] = useState(1);
@@ -51,7 +52,7 @@ const Blog = () => {
         <div className="blog-page-wrapper">
             <main>
                 {/* Featured Hero */}
-                <section className="blog-hero">
+                <Link to="/blog/13" className="blog-hero" style={{ display: 'flex', textDecoration: 'none' }}>
                     <div className="hero-content">
                         <span className="hero-tag">Featured Story</span>
                         <h1 className="hero-title">The Secret to Keeping Your Organic Greens Fresh for 2 Weeks</h1>
@@ -61,7 +62,7 @@ const Blog = () => {
                             <span><i className="fa-regular fa-user"></i> By Sarah Green</span>
                         </div>
                     </div>
-                </section>
+                </Link>
 
                 {/* Filter Tabs */}
                 <div className="blog-filters">
@@ -81,8 +82,7 @@ const Blog = () => {
                     <div className="blog-grid">
                         {currentPosts.length > 0 ? (
                             currentPosts.map(post => (
-                                <article className="blog-card" key={post.id} style={{ cursor: 'pointer', position: 'relative' }}>
-                                    <Link to={`/blog/${post.id}`} style={{ position: 'absolute', inset: 0, zIndex: 1 }} aria-label={post.title}></Link>
+                                <Link to={`/blog/${post.id}`} className="blog-card" key={post.id} style={{ position: 'relative', textDecoration: 'none' }}>
                                     <div className="blog-img-wrapper">
                                         <span className="blog-category">{post.category}</span>
                                         <img src={post.img} alt={post.title} />
@@ -93,7 +93,7 @@ const Blog = () => {
                                         <p className="blog-excerpt">{post.excerpt}</p>
                                         <span className="read-more">Read Article</span>
                                     </div>
-                                </article>
+                                </Link>
                             ))
                         ) : (
                             <p style={{ gridColumn: "1/-1", textAlign: "center", padding: "2rem" }}>No articles found for this category.</p>

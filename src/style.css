@@ -1172,6 +1172,13 @@ footer {
         min-height: 300px;
     }
 
+    .box,
+    .box1,
+    .box2,
+    .box3 {
+        padding: 1.75rem 1.25rem;
+    }
+
     .deal-banner {
         grid-template-columns: 1fr;
         /* Stack vertically */
@@ -1598,12 +1605,15 @@ footer {
     display: flex;
     align-items: center;
     gap: 5px;
-    transition: gap 0.2s;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform-origin: left;
 }
 
-.read-more:hover {
+.read-more:hover,
+.blog-card:hover .read-more {
     color: var(--accent-green);
     gap: 8px;
+    transform: translateX(0.5rem) scale(1.1);
 }
 
 .read-more::after {
