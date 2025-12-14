@@ -98,7 +98,7 @@ const Products = () => {
                 {(showAllCategories ? sortedCategories : sortedCategories.slice(0, 7)).map(cat => (
                     <button
                         key={cat}
-                        className={`filter-btn ${selectedCategory === cat ? 'active' : ''}`}
+                        className={`filter-btn pointer ${selectedCategory === cat ? 'active' : ''}`}
                         onClick={() => setSelectedCategory(cat)}
                     >
                         {cat === "All" ? "All" : cat.endsWith('s') ? cat : `${cat}s`}
@@ -106,7 +106,7 @@ const Products = () => {
                 ))}
                 {sortedCategories.length > 7 && (
                     <button
-                        className="filter-btn toggle-more-btn"
+                        className="filter-btn toggle-more-btn pointer"
                         onClick={() => setShowAllCategories(!showAllCategories)}
                         aria-label={showAllCategories ? "Show Less" : "Show More"}
                     >
@@ -117,7 +117,7 @@ const Products = () => {
 
             {/* Mobile Filter Toggle & Menu */}
             <div className="mobile-filter-container">
-                <button className="mobile-filter-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                <button className="mobile-filter-toggle pointer" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                     <i className="fa-solid fa-filter"></i> Filter
                 </button>
 
@@ -131,7 +131,7 @@ const Products = () => {
                             {sortedCategories.map(cat => (
                                 <button
                                     key={cat}
-                                    className={`mobile-cat-btn ${selectedCategory === cat ? 'active' : ''}`}
+                                    className={`mobile-cat-btn pointer ${selectedCategory === cat ? 'active' : ''}`}
                                     onClick={() => {
                                         setSelectedCategory(cat);
                                         setIsMobileMenuOpen(false);
@@ -151,7 +151,7 @@ const Products = () => {
 
                 <div className="custom-dropdown" ref={dropdownRef}>
                     <div
-                        className={`dropdown-selected ${isDropdownOpen ? 'active' : ''}`}
+                        className={`dropdown-selected pointer ${isDropdownOpen ? 'active' : ''}`}
                         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                     >
                         {selectedSort.includes('Price:') ? (
@@ -167,7 +167,7 @@ const Products = () => {
                             {sortOptions.map(option => (
                                 <div
                                     key={option}
-                                    className={`dropdown-item ${selectedSort === option ? 'selected' : ''}`}
+                                    className={`dropdown-item pointer ${selectedSort === option ? 'selected' : ''}`}
                                     onClick={() => {
                                         setSelectedSort(option);
                                         setIsDropdownOpen(false);

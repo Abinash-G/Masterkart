@@ -136,13 +136,13 @@ const Nav = () => {
                     </button>
 
                     <Link to="/login">
-                        <div className="action-item">
+                        <div className="action-item pointer">
                             <i className="fa-regular fa-user"></i>
                             <span className="m-hide">Account</span>
                         </div>
                     </Link>
                     <Link to="/wishlist">
-                        <div className="action-item">
+                        <div className="action-item pointer">
                             <div className="icon-badge-wrapper">
                                 <i className="fa-regular fa-heart"></i>
                                 {wishlistItems.length > 0 && (
@@ -153,7 +153,7 @@ const Nav = () => {
                         </div>
                     </Link>
                     <Link to="/cart">
-                        <div className="action-item">
+                        <div className="action-item pointer">
                             <div className="icon-badge-wrapper">
                                 <i className="fa-solid fa-bag-shopping"></i>
                                 {cartItems.length > 0 && (
@@ -170,7 +170,7 @@ const Nav = () => {
 
             {/* --- COMMON NAVIGATION --- */}
             <nav className="nav">
-                <div className="nav-more-container" ref={dropdownRef}>
+                <div className="nav-more-container pointer" ref={dropdownRef}>
                     <div
                         className={`nav-more ${isMoreOpen ? 'active' : ''}`}
                         role="button"
@@ -207,7 +207,7 @@ const Nav = () => {
                         >
                             Categories <i className="fa-solid fa-angle-down"></i>
                         </NavLink>
-                        <div className="dropdown">
+                        <div className="dropdown pointer">
                             <div className="dropdown-grid">
                                 <Link className="dropdown-card" to="/products?category=Snacks">
                                     <img src="/Masterkart/cashew.png" alt="Snack" />
@@ -239,7 +239,7 @@ const Nav = () => {
                         </div>
                     </div>
 
-                    <div className="nav-item has-dropdown">
+                    <div className="nav-item has-dropdown pointer">
                         <NavLink
                             className={({ isActive }) => isActive ? "nav-link active-link" : "nav-link"}
                             to="/products"
@@ -276,7 +276,7 @@ const Nav = () => {
                     </NavLink>
                 </div>
 
-                <div className="location">
+                <div className="location pointer">
                     {locationData.city}, {locationData.country_code} <i className="fa-solid fa-location-dot"></i>
                     <div className="location-dropdown">
                         <iframe

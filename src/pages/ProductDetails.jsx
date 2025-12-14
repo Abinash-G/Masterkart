@@ -70,7 +70,7 @@ const ProductDetails = () => {
                         {images.map((img, index) => (
                             <div
                                 key={index}
-                                className={`thumbnail ${selectedImage === index ? 'active' : ''}`}
+                                className={`thumbnail pointer ${selectedImage === index ? 'active' : ''}`}
                                 onClick={() => setSelectedImage(index)}
                             >
                                 <img src={img} alt={`${product.name} view ${index + 1}`} />

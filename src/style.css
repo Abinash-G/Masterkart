@@ -62,6 +62,31 @@ body {
     color: var(--text-primary);
     overflow-x: hidden;
     transition: background-color 0.3s, color 0.3s;
+    cursor: url('/c-mouse.svg'), auto !important;
+}
+
+body.dark-mode {
+    cursor: url('/c-mouse-dark.svg'), auto !important;
+}
+
+a,
+button,
+input[type="submit"],
+input[type="button"],
+select,
+.pointer,
+.dropdown-card {
+    cursor: url('/c-pointer.svg?v=2') 13 2, pointer !important;
+}
+
+body.dark-mode a,
+body.dark-mode button,
+body.dark-mode input[type="submit"],
+body.dark-mode input[type="button"],
+body.dark-mode select,
+body.dark-mode .pointer,
+body.dark-mode .dropdown-card {
+    cursor: url('/c-pointer-dark.svg?v=2') 13 2, pointer !important;
 }
 
 img {
