@@ -411,9 +411,16 @@ body.dark-mode .mini-map {
     border-left: 3px solid transparent;
 }
 
-.nav-more-dropdown a:hover {
+.nav-more-dropdown a:hover,
+.nav-more-dropdown a.active {
     background-color: var(--bg-secondary);
     padding-left: 1.5rem;
+}
+
+.nav-more-dropdown a.active {
+    color: var(--accent-green);
+    border-left-color: var(--accent-green);
+    font-weight: 700;
 }
 
 .nav-more-dropdown a:first-child {

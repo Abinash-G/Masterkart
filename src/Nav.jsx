@@ -181,10 +181,10 @@ const Nav = () => {
                     </div>
                     {isMoreOpen && (
                         <div className="nav-more-dropdown">
-                            <Link to="/" onClick={() => setIsMoreOpen(false)}>Home</Link>
-                            <Link to="/blog" onClick={() => setIsMoreOpen(false)}>Blog</Link>
-                            <Link to="/categories" onClick={() => setIsMoreOpen(false)}>Categories</Link>
-                            <Link to="/products" onClick={() => setIsMoreOpen(false)}>Products</Link>
+                            <NavLink to="/" onClick={() => setIsMoreOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
+                            <NavLink to="/blog" onClick={() => setIsMoreOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>Blog</NavLink>
+                            <NavLink to="/categories" onClick={() => setIsMoreOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>Categories</NavLink>
+                            <NavLink to="/products" onClick={() => setIsMoreOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>Products</NavLink>
                         </div>
                     )}
                 </div>
@@ -331,10 +331,10 @@ const Nav = () => {
                     <div className="footer-col">
                         <h4>Help Center</h4>
                         <ul className="footer-links">
-                            <li><Link to="/">Payments</Link></li>
-                            <li><Link to="/">Shipping</Link></li>
-                            <li><Link to="/">Product Returns</Link></li>
-                            <li><Link to="/">FAQ</Link></li>
+                            <li><Link to="/help#payments">Payments</Link></li>
+                            <li><Link to="/help#shipping">Shipping</Link></li>
+                            <li><Link to="/help#returns">Product Returns</Link></li>
+                            <li><Link to="/help#faq">FAQ</Link></li>
                         </ul>
                     </div>
                 </div>
