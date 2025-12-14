@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link
-import { useCart } from './CartContext';
-import './style.css';
-import productsData from './products.json';
+import { useCart } from '../CartContext';
+import '../style.css';
+import productsData from '../data/products.json';
 
 const Home = () => {
   const { addToCart, addToWishlist, isInWishlist } = useCart();
@@ -81,6 +81,26 @@ const Home = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Calculate Lowest Prices
+  const getMinPrice = (category) => {
+    const products = category
+      ? productsData.filter(p => p.category === category)
+      : productsData;
+
+    if (!products.length) return 0;
+    const prices = products.map(p => parseFloat(p.price.replace(/[^0-9.]/g, '')));
+    return Math.min(...prices);
+  };
+
+  const minAll = getMinPrice();
+  const minFruit = getMinPrice('Fruit');
+  const minVeg = getMinPrice('Vegetable');
+
+  // Helper to render price with bold integer part
+  const renderPrice = (price) => (
+    <>starting at ₹<b>{Math.floor(price)}</b>{(price % 1 > 0) ? (price % 1).toFixed(2).substring(1) : '.00'}</>
+  );
+
   return (
     <>
       {/* Main Grid Layout */}
@@ -90,7 +110,7 @@ const Home = () => {
           <div className="box-content">
             <span className="sub-title">Fresh & Healthy</span>
             <span className="main-title">FRUITS &<br />VEGETABLES</span>
-            <span className="price-tag">starting at ₹<b>39</b>.00</span>
+            <span className="price-tag">{renderPrice(minAll)}</span>
             <Link to="/products" className="shop-btn">Shop Now <i className="fa-solid fa-angles-right"></i></Link>
           </div>
           {/* Decorative Images */}
@@ -104,6 +124,7 @@ const Home = () => {
           <div className="box-content">
             <span className="sub-title">Fresh</span>
             <span className="main-title">Fruits</span>
+            <span className="price-tag">{renderPrice(minFruit)}</span>
             <Link to="/products?category=Fruit" className="shop-btn">Shop Now <i className="fa-solid fa-angles-right"></i></Link>
           </div>
           <img src="https://png.pngtree.com/png-clipart/20250104/original/pngtree-vibrant-fruit-basket-with-fresh-and-juicy-assorted-fruits-for-a-png-image_20072050.png" className="deco-img box2-img" alt="Fruits" />
@@ -114,6 +135,7 @@ const Home = () => {
           <div className="box-content">
             <span className="sub-title">Organic</span>
             <span className="main-title">Vegetables</span>
+            <span className="price-tag">{renderPrice(minVeg)}</span>
             <Link to="/products?category=Vegetable" className="shop-btn">Shop Now <i className="fa-solid fa-angles-right"></i></Link>
           </div>
           <img src="https://png.pngtree.com/png-vector/20240811/ourmid/pngtree-fruit-and-vegetable-png-image_13446283.png" className="deco-img box3-img" alt="Veg" />
@@ -339,6 +361,7 @@ const Home = () => {
           <i className="fa-brands fa-pagelines" title="Pure Nature"></i>
           <i className="fa-solid fa-money-bill-wheat" title="Grain Master"></i>
           <i className="fa-solid fa-lemon" title="lemon"></i>
+          <i className="fa-solid fa-carrot" title="carrot"></i>
         </div>
       </section >
 

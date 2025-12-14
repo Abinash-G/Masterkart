@@ -3,6 +3,28 @@ import { Outlet, Link, NavLink } from 'react-router-dom';
 import './style.css';
 
 const Nav = () => {
+    // --- DROPDOWN STATE ---
+    const [isMoreOpen, setIsMoreOpen] = useState(false);
+    const dropdownRef = React.useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsMoreOpen(false);
+            }
+        };
+
+        if (isMoreOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMoreOpen]);
+
     // --- CENTRALIZED THEME LOGIC ---
     const [theme, setTheme] = useState(() => {
         if (typeof window !== 'undefined') {
@@ -24,13 +46,67 @@ const Nav = () => {
         setTheme(prev => prev === 'light' ? 'dark' : 'light');
     };
 
+    const [locationData, setLocationData] = useState({
+        city: '.',
+        country_code: '..',
+        latitude: 0,
+        longitude: 0,
+        loaded: false
+    });
+
+    useEffect(() => {
+        const fetchIPLocation = () => {
+            fetch('https://ipapi.co/json/')
+                .then(res => res.json())
+                .then(data => {
+                    if (data && data.city) {
+                        setLocationData({
+                            city: data.city.toUpperCase(),
+                            country_code: data.country_code,
+                            latitude: data.latitude,
+                            longitude: data.longitude,
+                            loaded: true
+                        });
+                    }
+                })
+                .catch(err => console.error("IP Location fetch error:", err));
+        };
+
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const { latitude, longitude } = position.coords;
+                    // Use a free reverse geocoding API to get city name from coords
+                    fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
+                        .then(res => res.json())
+                        .then(data => {
+                            setLocationData({
+                                city: (data.city || data.locality || 'Unknown').toUpperCase(),
+                                country_code: data.countryCode || 'IN',
+                                latitude: latitude,
+                                longitude: longitude,
+                                loaded: true
+                            });
+                        })
+                        .catch(() => fetchIPLocation()); // Fallback to IP if reverse geo fails
+                },
+                (error) => {
+                    console.warn("Geolocation denied or failed, falling back to IP:", error);
+                    fetchIPLocation();
+                }
+            );
+        } else {
+            fetchIPLocation();
+        }
+    }, []);
+
     return (
         <>
             {/* --- COMMON HEADER --- */}
             <header>
-                <div className="logo">
+                <Link to="/" className="logo">
                     <span><i className="fa-brands fa-meta"></i>&nbsp;<span className="m-hide">asterkart</span></span>
-                </div>
+                </Link>
 
                 <div className="search-bar m-hide">
                     <i className="fa-solid fa-magnifying-glass" style={{ color: '#aaa' }}></i>
@@ -70,14 +146,23 @@ const Nav = () => {
 
             {/* --- COMMON NAVIGATION --- */}
             <nav className="nav">
-                <div className="nav-more-container">
-                    <div className="nav-more" role="button" tabIndex="0"><i className="fa-solid fa-bars"></i></div>
-                    <div className="nav-more-dropdown">
-                        <Link to="/">Home</Link>
-                        <Link to="/blog">Blog</Link>
-                        <Link to="/categories">Categories</Link>
-                        <Link to="/products">Products</Link>
+                <div className="nav-more-container" ref={dropdownRef}>
+                    <div
+                        className={`nav-more ${isMoreOpen ? 'active' : ''}`}
+                        role="button"
+                        tabIndex="0"
+                        onClick={() => setIsMoreOpen(!isMoreOpen)}
+                    >
+                        <i className={`fa-solid ${isMoreOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
                     </div>
+                    {isMoreOpen && (
+                        <div className="nav-more-dropdown">
+                            <Link to="/" onClick={() => setIsMoreOpen(false)}>Home</Link>
+                            <Link to="/blog" onClick={() => setIsMoreOpen(false)}>Blog</Link>
+                            <Link to="/categories" onClick={() => setIsMoreOpen(false)}>Categories</Link>
+                            <Link to="/products" onClick={() => setIsMoreOpen(false)}>Products</Link>
+                        </div>
+                    )}
                 </div>
 
                 <div className="nav-links">
@@ -101,23 +186,23 @@ const Nav = () => {
                         <div className="dropdown">
                             <div className="dropdown-grid">
                                 <Link className="dropdown-card" to="/products?category=Snacks">
-                                    <img src="cashew.png" alt="Snack" />
+                                    <img src="/Masterkart/cashew.png" alt="Snack" />
                                     <div className="title">SNACK & SPICE</div>
                                 </Link>
                                 <Link className="dropdown-card" to="/products?category=Juice">
-                                    <img src="drink.png" alt="Drink" />
+                                    <img src="/Masterkart/drink.png" alt="Drink" />
                                     <div className="title">JUICE & DRINKS</div>
                                 </Link>
                                 <Link className="dropdown-card" to="/products?category=Seafood">
-                                    <img src="fish.png" alt="Fish" />
+                                    <img src="/Masterkart/fish.png" alt="Fish" />
                                     <div className="title">SEAFOOD</div>
                                 </Link>
                                 <Link className="dropdown-card" to="/products?category=Bakery">
-                                    <img src="fast-food.png" alt="Fast Food" />
+                                    <img src="/Masterkart/fast-food.png" alt="Fast Food" />
                                     <div className="title">FAST FOOD</div>
                                 </Link>
                                 <Link className="dropdown-card" to="/products?category=Dairy">
-                                    <img src="eggs.png" alt="Eggs" />
+                                    <img src="/Masterkart/eggs.png" alt="Eggs" />
                                     <div className="title">EGGS</div>
                                 </Link>
                                 <Link className="dropdown-card more-card" to="/categories">
@@ -168,11 +253,11 @@ const Nav = () => {
                 </div>
 
                 <div className="location">
-                    <i className="fa-solid fa-location-dot"></i> SURAT, IN <i className="fa-solid fa-chevron-down"></i>
+                    {locationData.city}, {locationData.country_code} <i className="fa-solid fa-location-dot"></i>
                     <div className="location-dropdown">
                         <iframe
                             className="mini-map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.4170942006!2d72.73989504859032!3d21.15934029281313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1703673333068!5m2!1sen!2sin"
+                            src={`https://maps.google.com/maps?q=${locationData.latitude},${locationData.longitude}&hl=en&z=14&output=embed`}
                             loading="lazy"
                             allowFullScreen=""
                             referrerPolicy="no-referrer-when-downgrade"

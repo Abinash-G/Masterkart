@@ -155,9 +155,9 @@
 
 .original-price {
     font-size: 1.2rem;
-    color: var(--accent-red);
+    color: var(--accent-red) !important;
     text-decoration: none;
-    background: #ffebeb;
+    background: var(--bg-secondary);
     padding: 2px 8px;
     border-radius: 4px;
 }
@@ -234,10 +234,10 @@
     /* matches button height roughly */
     border-radius: 50%;
     border: 1px solid var(--border-color);
-    background: white;
+    background: var(--bg-secondary);
     cursor: pointer;
     font-size: 1.2rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     transition: all 0.3s;
     display: flex;
     align-items: center;

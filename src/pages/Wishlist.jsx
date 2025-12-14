@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from './CartContext';
+import { useCart } from '../CartContext';
 import './Wishlist.css';
 
 const Wishlist = () => {

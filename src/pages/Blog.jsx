@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Blog.css';
-import blogData from './blog.json';
+import blogData from '../data/blog.json';
 
 import { Link } from 'react-router-dom';
 

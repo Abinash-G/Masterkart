@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import blogData from './blog.json';
-import './style.css';
+import blogData from '../data/blog.json';
+import '../style.css';
 
 const BlogDetails = () => {
     const { id } = useParams();

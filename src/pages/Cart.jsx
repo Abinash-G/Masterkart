@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from './CartContext';
+import { useCart } from '../CartContext';
 import './Cart.css';
-import productsData from './products.json';
+import productsData from '../data/products.json';
 
 const Cart = () => {
     // Context

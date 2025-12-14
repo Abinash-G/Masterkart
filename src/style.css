@@ -431,6 +431,9 @@ body.dark-mode .mini-map {
     right: 2%;
     top: 50%;
     transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* --- Main Promo Grid --- */
@@ -465,12 +468,18 @@ body.dark-mode .mini-map {
     background-color: #fff09e;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .box3 {
     background-color: #ffaeae;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .box-content {
@@ -1212,6 +1221,7 @@ footer {
     .promo-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        padding-top: calc(var(--header-h) - 3.5rem);
     }
 
     .box1,
@@ -1274,6 +1284,10 @@ footer {
 
     .blog-preview-section {
         margin-top: 1rem;
+    }
+
+    .layout-content-wrapper {
+        padding-top: calc(var(--header-h) - 1rem);
     }
 }
 
@@ -1475,6 +1489,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     opacity: 0.6;
+    padding: 0 1rem;
 }
 
 .brands-grid i {

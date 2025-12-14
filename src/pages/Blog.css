@@ -275,4 +275,8 @@ body.dark-mode .blog-category {
     .hero-content {
         padding: 1.5rem;
     }
+
+    .blog-page-wrapper {
+        padding-top: 0;
+    }
 }

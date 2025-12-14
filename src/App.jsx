@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Nav from './Nav'; // Your Layout Component
-import Home from './Home';
-import Blog from './Blog';
-import Cart from './Cart';
-import Wishlist from './Wishlist';
-import Login from './Login';
-import Register from './Register';
-import Categories from './Categories';
-import Products from './Products';
-import ProductDetails from './ProductDetails';
-import BlogDetails from './BlogDetails';
-import Deal from './Deal';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import Cart from './pages/Cart';
+import Wishlist from './pages/Wishlist';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Categories from './pages/Categories';
+import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
+import BlogDetails from './pages/BlogDetails';
+import Deal from './pages/Deal';
 
 // ScrollToTop Component
 const ScrollToTop = () => {

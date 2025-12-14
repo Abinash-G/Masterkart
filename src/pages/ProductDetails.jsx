@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useCart } from './CartContext';
-import productsData from './products.json';
+import { useCart } from '../CartContext';
+import productsData from '../data/products.json';
 import './ProductDetails.css'; // We will create this next
 
 const ProductDetails = () => {
@@ -11,6 +11,28 @@ const ProductDetails = () => {
     const [product, setProduct] = useState(null);
     const [quantity, setQuantity] = useState(1);
     const [selectedImage, setSelectedImage] = useState(0);
+
+    const originalPrice = useMemo(() => {
+        if (!product || !product.price) return null;
+
+        // Remove currency symbols (like ₹ or $) to get the number
+        const currentPriceNum = parseFloat(product.price.replace(/[^0-9.]/g, ''));
+        if (isNaN(currentPriceNum)) return null;
+
+        let originalPriceNum = currentPriceNum * (2 + Math.random()); // Start between 2x and 3x
+        originalPriceNum = Math.min(originalPriceNum, currentPriceNum * 4); // Cap at 4x
+        originalPriceNum = Math.max(originalPriceNum, currentPriceNum + 50); // Ensure a minimum difference
+
+        let finalOriginalPrice = Math.ceil((originalPriceNum + 1) / 100) * 100 - 1;
+        if (finalOriginalPrice <= currentPriceNum) {
+            finalOriginalPrice = Math.ceil((currentPriceNum + 100) / 100) * 100 - 1;
+        }
+
+        // Detect currency symbol from product price, default to ₹ if not found but digits exist
+        const symbol = product.price.replace(/[0-9.,]/g, '').trim() || '₹';
+
+        return `${symbol}${finalOriginalPrice.toFixed(2)}`;
+    }, [product]);
 
     useEffect(() => {
         // Find product by ID
@@ -75,7 +97,7 @@ const ProductDetails = () => {
                         <span className="current-price">{product.price}</span>
                         {/* Mock original price for effect */}
                         <span className="original-price">
-                            Top Deal
+                            {originalPrice}
                         </span>
                     </div>
 
@@ -96,7 +118,7 @@ const ProductDetails = () => {
                             }}
                             title={`Add ${quantity} to Cart`}
                         >
-                            <i className="fa-solid fa-cart-plus"></i> Add to Cart
+                            <i className="fa-solid fa-cart-plus"></i> <span className='m-hide'>Add to Cart</span>
                         </button>
 
                         <button

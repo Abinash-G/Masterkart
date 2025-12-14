@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Categories.css';
 
-import productsData from './products.json';
+import productsData from '../data/products.json';
 
 const Categories = () => {
     // Helper to count items per category
