@@ -17,6 +17,8 @@ const HelpCenter = () => {
         <div className="help-page">
             <style>
                 {`
+                @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
                 .help-page {
                     padding-bottom: 4rem;
                 }
@@ -38,6 +40,7 @@ const HelpCenter = () => {
                 }
 
                 .help-hero h1 {
+                    font-family: 'Lobster', cursive;
                     font-size: 3.5rem;
                     margin-bottom: 0.8rem;
                     font-weight: 800;

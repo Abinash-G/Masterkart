@@ -313,7 +313,7 @@ const Nav = () => {
                     <div className="footer-col">
                         <h4>Quick Links</h4>
                         <ul className="footer-links">
-                            <li><Link to="/">About Us</Link></li>
+                            <li><Link to="/about">About Us</Link></li>
                             <li><Link to="/">Shop</Link></li>
                             <li><Link to="/blog">Blog</Link></li>
                             <li><Link to="/">Contact</Link></li>

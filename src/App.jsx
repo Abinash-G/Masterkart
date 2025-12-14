@@ -13,6 +13,7 @@ import ProductDetails from './pages/ProductDetails';
 import BlogDetails from './pages/BlogDetails';
 import Deal from './pages/Deal';
 import HelpCenter from './pages/HelpCenter';
+import About from './pages/About';
 
 // ScrollToTop Component
 const ScrollToTop = () => {
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/deal" element={<Deal />} />
           <Route path="/help" element={<HelpCenter />} />
+          <Route path="/about" element={<About />} />
         </Route>
 
         {/* Login Page (No Nav) */}
