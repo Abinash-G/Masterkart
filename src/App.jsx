@@ -48,8 +48,6 @@ const App = () => {
           <Route path="/about" element={<About />} />
         </Route>
 
-        {/* Login Page (No Nav) */}
-        {/* Login Page (No Nav) */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
