@@ -118,9 +118,9 @@ const Cart = () => {
                                 <span>Total</span>
                                 <span>₹{total.toFixed(2)}</span>
                             </div>
-                            <button className="checkout-btn" onClick={() => alert('Proceeding to checkout...')}>
+                            <Link to="/payment" className="checkout-btn">
                                 Checkout <i className="fa-solid fa-arrow-right"></i>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 )}

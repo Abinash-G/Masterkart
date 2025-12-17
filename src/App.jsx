@@ -14,6 +14,7 @@ import BlogDetails from './pages/BlogDetails';
 import Deal from './pages/Deal';
 import HelpCenter from './pages/HelpCenter';
 import About from './pages/About';
+import Payment from './pages/Payment';
 
 // ScrollToTop Component
 const ScrollToTop = () => {
@@ -35,6 +36,7 @@ const App = () => {
         <Route element={<Nav />}>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
