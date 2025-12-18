@@ -539,7 +539,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     margin: 4rem auto;
                     padding: 0 2rem;
                     font-family: 'Abi', system-ui, -apple-system, sans-serif;
-                    color: #1a1a1a;
+                    color: var(--text-primary);
                     display: grid;
                     grid-template-columns: 1.2fr 1fr;
                     gap: 4rem;
@@ -561,7 +561,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
                 .back-link {
                     display: inline-flex;
-                    color: #1a1a1a;
+                    color: var(--text-primary);
                     font-size: 1.2rem;
                     text-decoration: none;
                     margin-right: 8px;
@@ -574,12 +574,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     display: flex;
                     align-items: center;
                     gap: 8px;
+                    color: var(--text-primary);
                 }
 
                 .pay-title {
                     font-size: 1.8rem;
                     font-weight: 600;
                     margin-bottom: 2rem;
+                    color: var(--text-primary);
                 }
 
                 .express-checkout {
@@ -597,14 +599,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     font-weight: 500;
                     cursor: pointer;
                     margin-bottom: 1.5rem;
-                    transition: opacity 0.2s;
+                    transition: opacity 0.2s, background 0.3s, color 0.3s;
                 }
                 
                 .express-checkout:hover { opacity: 0.9; }
 
                 /* Methods List */
                 .methods-container {
-                    border: 1px solid #e5e7eb;
+                    border: 1px solid var(--border-color);
                     border-radius: 12px;
                     overflow: hidden;
                     margin-bottom: 2rem;
@@ -614,7 +616,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     display: flex;
                     align-items: center;
                     padding: 1.25rem;
-                    border-bottom: 1px solid #e5e7eb;
+                    border-bottom: 1px solid var(--border-color);
                     cursor: pointer;
                     transition: background 0.1s;
                     position: relative;
@@ -625,7 +627,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 }
 
                 .method-row:hover {
-                    background: #f9fafb;
+                    background: var(--bg-secondary);
                 }
 
                 .method-icon {
@@ -637,7 +639,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     align-items: center;
                     justify-content: center;
                     font-size: 1.2rem;
-                    color: #4b5563;
+                    color: var(--text-secondary);
                     margin-right: 1rem;
                 }
 
@@ -650,11 +652,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     font-size: 1rem;
                     display: block;
                     margin-bottom: 2px;
+                    color: var(--text-primary);
                 }
 
                 .method-sub {
                     font-size: 0.85rem;
-                    color: #6b7280;
+                    color: var(--text-secondary);
                     display: flex;
                     gap: 6px;
                     align-items: center;
@@ -693,13 +696,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     font-size: 0.95rem;
                     font-weight: 600;
                     margin-bottom: 0.5rem;
+                    color: var(--text-primary);
                 }
                 
                 .user-badge {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    color: #4b5563;
+                    color: var(--text-secondary);
                     font-size: 0.95rem;
                 }
 
@@ -733,7 +737,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     font-size: 1.5rem;
                     font-weight: 500;
                     margin-bottom: 2rem;
-                    color: #111;
+                    color: var(--text-primary);
                 }
 
                 .summary-item {
@@ -753,19 +757,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     font-size: 1rem;
                     margin-bottom: 4px;
                     display: block;
+                    color: var(--text-primary);
                 }
 
                 .item-meta {
                     font-size: 0.85rem;
-                    color: #6b7280;
+                    color: var(--text-secondary);
                 }
 
                 .item-price {
                     font-weight: 500;
+                    color: var(--text-primary);
                 }
 
                 .total-row {
-                    border-top: 1px solid #e5e7eb;
+                    border-top: 1px solid var(--border-color);
                     margin-top: 2rem;
                     padding-top: 2rem;
                     display: flex;
@@ -775,14 +781,46 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
                 .total-label {
                     font-weight: 500;
-                    color: #111;
+                    color: var(--text-primary);
                 }
 
                 .total-amount {
                     font-size: 1.5rem;
                     font-weight: 700;
+                    color: var(--text-primary);
                 }
 
                 /* Icons */
                 .card-icons i { margin-right: 4px; font-size: 1rem; }
-            `}),(0,N.jsxs)(`div`,{className:`payment-left`,children:[(0,N.jsxs)(`div`,{className:`pay-header`,children:[(0,N.jsxs)(`div`,{className:`brand-logo`,children:[(0,N.jsx)(M,{to:`/cart`,className:`back-link`,children:(0,N.jsx)(`i`,{className:`fa-solid fa-chevron-left`})}),(0,N.jsx)(`i`,{className:`fa-brands fa-meta`}),` Masterkart`]}),(0,N.jsx)(`div`,{style:{fontSize:`0.9rem`,color:`#666`,marginBottom:`0.5rem`},children:`Hi User,`}),(0,N.jsxs)(`div`,{className:`pay-title`,children:[`Payment ₹`,s.toFixed(2)]})]}),(0,N.jsxs)(`div`,{className:`methods-container`,children:[(0,N.jsxs)(`div`,{className:`method-row ${n===`card`?`selected`:``}`,onClick:()=>r(`card`),children:[(0,N.jsx)(`div`,{className:`method-icon`,children:(0,N.jsx)(`i`,{className:`fa-regular fa-credit-card`})}),(0,N.jsxs)(`div`,{className:`method-details`,children:[(0,N.jsx)(`span`,{className:`method-name`,children:`Card`}),(0,N.jsxs)(`span`,{className:`method-sub card-icons`,children:[(0,N.jsx)(`i`,{className:`fa-brands fa-cc-visa`,style:{color:`#1A1F71`}}),(0,N.jsx)(`i`,{className:`fa-brands fa-cc-mastercard`,style:{color:`#EB001B`}}),(0,N.jsx)(`i`,{className:`fa-brands fa-cc-amex`,style:{color:`#2E77BB`}})]})]}),(0,N.jsx)(`div`,{className:`radio-circle`})]}),(0,N.jsxs)(`div`,{className:`method-row ${n===`upi`?`selected`:``}`,onClick:()=>r(`upi`),children:[(0,N.jsx)(`div`,{className:`method-icon`,children:(0,N.jsx)(`i`,{className:`fa-brands fa-google-pay`,style:{color:`#444`}})}),(0,N.jsxs)(`div`,{className:`method-details`,children:[(0,N.jsx)(`span`,{className:`method-name`,children:`UPI`}),(0,N.jsx)(`span`,{className:`method-sub`,children:`Google Pay, PhonePe, Paytm`})]}),(0,N.jsx)(`div`,{className:`radio-circle`})]}),(0,N.jsxs)(`div`,{className:`method-row ${n===`netbanking`?`selected`:``}`,onClick:()=>r(`netbanking`),children:[(0,N.jsx)(`div`,{className:`method-icon`,children:(0,N.jsx)(`i`,{className:`fa-solid fa-building-columns`})}),(0,N.jsxs)(`div`,{className:`method-details`,children:[(0,N.jsx)(`span`,{className:`method-name`,children:`Net Banking`}),(0,N.jsx)(`span`,{className:`method-sub`,children:`All major banks supported`})]}),(0,N.jsx)(`div`,{className:`radio-circle`})]}),(0,N.jsxs)(`div`,{className:`method-row ${n===`cod`?`selected`:``}`,onClick:()=>r(`cod`),children:[(0,N.jsx)(`div`,{className:`method-icon`,children:(0,N.jsx)(`i`,{className:`fa-solid fa-money-bill`})}),(0,N.jsxs)(`div`,{className:`method-details`,children:[(0,N.jsx)(`span`,{className:`method-name`,children:`Cash on Delivery`}),(0,N.jsx)(`span`,{className:`method-sub`,children:`Pay when you receive`})]}),(0,N.jsx)(`div`,{className:`radio-circle`})]})]}),(0,N.jsxs)(`div`,{className:`personal-info`,children:[(0,N.jsx)(`div`,{className:`info-label`,children:`Personal information`}),(0,N.jsxs)(`div`,{className:`user-badge`,children:[(0,N.jsx)(`i`,{className:`fa-solid fa-user-circle`,style:{fontSize:`1.2rem`}}),(0,N.jsx)(`span`,{children:`User, user@example.com`})]})]}),(0,N.jsxs)(`button`,{className:`main-pay-btn active`,onClick:()=>{alert(`Payment processed via ${n}`),t(`/`)},children:[`Pay ₹`,s.toFixed(2)]})]}),(0,N.jsx)(`div`,{className:`payment-right`,children:(0,N.jsxs)(`div`,{className:`summary-container`,children:[(0,N.jsx)(`h2`,{className:`summary-header`,children:`Summary`}),e.map(e=>(0,N.jsxs)(`div`,{className:`summary-item`,children:[(0,N.jsxs)(`div`,{className:`item-info`,children:[(0,N.jsx)(`span`,{className:`item-name`,children:e.name}),(0,N.jsxs)(`span`,{className:`item-meta`,children:[`Quantity `,e.quantity,` • `,e.price,` each`]})]}),(0,N.jsxs)(`div`,{className:`item-price`,children:[`₹`,(i(e.price)*e.quantity).toFixed(2)]})]},e.id)),(0,N.jsxs)(`div`,{className:`summary-item`,children:[(0,N.jsx)(`div`,{className:`item-info`,children:(0,N.jsx)(`span`,{className:`item-name`,children:`Shipping`})}),(0,N.jsx)(`div`,{className:`item-price`,children:o===0?(0,N.jsx)(`span`,{style:{color:`#16a34a`},children:`Free`}):`₹${o.toFixed(2)}`})]}),(0,N.jsxs)(`div`,{className:`total-row`,children:[(0,N.jsx)(`span`,{className:`total-label`,children:`Total order amount`}),(0,N.jsxs)(`span`,{className:`total-amount`,children:[`₹`,s.toFixed(2)]})]})]})})]})},Qn=()=>{let{pathname:e}=Je();return x.useEffect(()=>{window.scrollTo(0,0)},[e]),null};(0,An.createRoot)(document.getElementById(`root`)).render((0,N.jsx)(x.StrictMode,{children:(0,N.jsx)(Nn,{children:(0,N.jsx)(()=>(0,N.jsxs)(cn,{basename:`/Masterkart/`,children:[(0,N.jsx)(Qn,{}),(0,N.jsxs)(Tt,{children:[(0,N.jsxs)(A,{element:(0,N.jsx)(Fn,{}),children:[(0,N.jsx)(A,{path:`/`,element:(0,N.jsx)(Ln,{})}),(0,N.jsx)(A,{path:`/cart`,element:(0,N.jsx)(Bn,{})}),(0,N.jsx)(A,{path:`/payment`,element:(0,N.jsx)(Zn,{})}),(0,N.jsx)(A,{path:`/wishlist`,element:(0,N.jsx)(Vn,{})}),(0,N.jsx)(A,{path:`/blog`,element:(0,N.jsx)(zn,{})}),(0,N.jsx)(A,{path:`/blog/:id`,element:(0,N.jsx)(qn,{})}),(0,N.jsx)(A,{path:`/categories`,element:(0,N.jsx)(Wn,{})}),(0,N.jsx)(A,{path:`/products`,element:(0,N.jsx)(Gn,{})}),(0,N.jsx)(A,{path:`/product/:id`,element:(0,N.jsx)(Kn,{})}),(0,N.jsx)(A,{path:`/deal`,element:(0,N.jsx)(Jn,{})}),(0,N.jsx)(A,{path:`/help`,element:(0,N.jsx)(Yn,{})}),(0,N.jsx)(A,{path:`/about`,element:(0,N.jsx)(Xn,{})})]}),(0,N.jsx)(A,{path:`/login`,element:(0,N.jsx)(Hn,{})}),(0,N.jsx)(A,{path:`/register`,element:(0,N.jsx)(Un,{})})]})]}),{})})}));
+
+                /* Dark Mode Overrides */
+                body.dark-mode .express-checkout {
+                    background: #fff;
+                    color: #000;
+                }
+                
+                body.dark-mode .main-pay-btn.active {
+                    background: #fff;
+                    color: #000;
+                }
+                
+                body.dark-mode .main-pay-btn:hover.active {
+                    background: #e5e5e5;
+                }
+
+                body.dark-mode .method-icon {
+                    background: #333;
+                }
+
+                body.dark-mode .radio-circle {
+                    border-color: #666;
+                }
+
+                body.dark-mode .selected .radio-circle {
+                    border-color: #fff;
+                }
+
+                body.dark-mode .selected .radio-circle::after {
+                    background: #fff;
+                }
+            `}),(0,N.jsxs)(`div`,{className:`payment-left`,children:[(0,N.jsxs)(`div`,{className:`pay-header`,children:[(0,N.jsxs)(`div`,{className:`brand-logo`,children:[(0,N.jsx)(M,{to:`/cart`,className:`back-link`,children:(0,N.jsx)(`i`,{className:`fa-solid fa-chevron-left`})}),(0,N.jsx)(`i`,{className:`fa-brands fa-meta`}),` Masterkart`]}),(0,N.jsx)(`div`,{style:{fontSize:`0.9rem`,color:`var(--text-secondary)`,marginBottom:`0.5rem`},children:`Hi User,`}),(0,N.jsxs)(`div`,{className:`pay-title`,children:[`Payment ₹`,s.toFixed(2)]})]}),(0,N.jsxs)(`div`,{className:`methods-container`,children:[(0,N.jsxs)(`div`,{className:`method-row ${n===`card`?`selected`:``}`,onClick:()=>r(`card`),children:[(0,N.jsx)(`div`,{className:`method-icon`,children:(0,N.jsx)(`i`,{className:`fa-regular fa-credit-card`})}),(0,N.jsxs)(`div`,{className:`method-details`,children:[(0,N.jsx)(`span`,{className:`method-name`,children:`Card`}),(0,N.jsxs)(`span`,{className:`method-sub card-icons`,children:[(0,N.jsx)(`i`,{className:`fa-brands fa-cc-visa`,style:{color:`#1A1F71`}}),(0,N.jsx)(`i`,{className:`fa-brands fa-cc-mastercard`,style:{color:`#EB001B`}}),(0,N.jsx)(`i`,{className:`fa-brands fa-cc-amex`,style:{color:`#2E77BB`}})]})]}),(0,N.jsx)(`div`,{className:`radio-circle`})]}),(0,N.jsxs)(`div`,{className:`method-row ${n===`upi`?`selected`:``}`,onClick:()=>r(`upi`),children:[(0,N.jsx)(`div`,{className:`method-icon`,children:(0,N.jsx)(`i`,{className:`fa-brands fa-google-pay`,style:{color:`var(--text-primary)`}})}),(0,N.jsxs)(`div`,{className:`method-details`,children:[(0,N.jsx)(`span`,{className:`method-name`,children:`UPI`}),(0,N.jsx)(`span`,{className:`method-sub`,children:`Google Pay, PhonePe, Paytm`})]}),(0,N.jsx)(`div`,{className:`radio-circle`})]}),(0,N.jsxs)(`div`,{className:`method-row ${n===`netbanking`?`selected`:``}`,onClick:()=>r(`netbanking`),children:[(0,N.jsx)(`div`,{className:`method-icon`,children:(0,N.jsx)(`i`,{className:`fa-solid fa-building-columns`})}),(0,N.jsxs)(`div`,{className:`method-details`,children:[(0,N.jsx)(`span`,{className:`method-name`,children:`Net Banking`}),(0,N.jsx)(`span`,{className:`method-sub`,children:`All major banks supported`})]}),(0,N.jsx)(`div`,{className:`radio-circle`})]}),(0,N.jsxs)(`div`,{className:`method-row ${n===`cod`?`selected`:``}`,onClick:()=>r(`cod`),children:[(0,N.jsx)(`div`,{className:`method-icon`,children:(0,N.jsx)(`i`,{className:`fa-solid fa-money-bill`})}),(0,N.jsxs)(`div`,{className:`method-details`,children:[(0,N.jsx)(`span`,{className:`method-name`,children:`Cash on Delivery`}),(0,N.jsx)(`span`,{className:`method-sub`,children:`Pay when you receive`})]}),(0,N.jsx)(`div`,{className:`radio-circle`})]})]}),(0,N.jsxs)(`div`,{className:`personal-info`,children:[(0,N.jsx)(`div`,{className:`info-label`,children:`Personal information`}),(0,N.jsxs)(`div`,{className:`user-badge`,children:[(0,N.jsx)(`i`,{className:`fa-solid fa-user-circle`,style:{fontSize:`1.2rem`}}),(0,N.jsx)(`span`,{children:`User, user@example.com`})]})]}),(0,N.jsxs)(`button`,{className:`main-pay-btn active`,onClick:()=>{alert(`Payment processed via ${n}`),t(`/`)},children:[`Pay ₹`,s.toFixed(2)]})]}),(0,N.jsx)(`div`,{className:`payment-right`,children:(0,N.jsxs)(`div`,{className:`summary-container`,children:[(0,N.jsx)(`h2`,{className:`summary-header`,children:`Summary`}),e.map(e=>(0,N.jsxs)(`div`,{className:`summary-item`,children:[(0,N.jsxs)(`div`,{className:`item-info`,children:[(0,N.jsx)(`span`,{className:`item-name`,children:e.name}),(0,N.jsxs)(`span`,{className:`item-meta`,children:[`Quantity `,e.quantity,` • `,e.price,` each`]})]}),(0,N.jsxs)(`div`,{className:`item-price`,children:[`₹`,(i(e.price)*e.quantity).toFixed(2)]})]},e.id)),(0,N.jsxs)(`div`,{className:`summary-item`,children:[(0,N.jsx)(`div`,{className:`item-info`,children:(0,N.jsx)(`span`,{className:`item-name`,children:`Shipping`})}),(0,N.jsx)(`div`,{className:`item-price`,children:o===0?(0,N.jsx)(`span`,{style:{color:`#16a34a`},children:`Free`}):`₹${o.toFixed(2)}`})]}),(0,N.jsxs)(`div`,{className:`total-row`,children:[(0,N.jsx)(`span`,{className:`total-label`,children:`Total order amount`}),(0,N.jsxs)(`span`,{className:`total-amount`,children:[`₹`,s.toFixed(2)]})]})]})})]})},Qn=()=>{let{pathname:e}=Je();return x.useEffect(()=>{window.scrollTo(0,0)},[e]),null};(0,An.createRoot)(document.getElementById(`root`)).render((0,N.jsx)(x.StrictMode,{children:(0,N.jsx)(Nn,{children:(0,N.jsx)(()=>(0,N.jsxs)(cn,{basename:`/Masterkart/`,children:[(0,N.jsx)(Qn,{}),(0,N.jsxs)(Tt,{children:[(0,N.jsxs)(A,{element:(0,N.jsx)(Fn,{}),children:[(0,N.jsx)(A,{path:`/`,element:(0,N.jsx)(Ln,{})}),(0,N.jsx)(A,{path:`/cart`,element:(0,N.jsx)(Bn,{})}),(0,N.jsx)(A,{path:`/payment`,element:(0,N.jsx)(Zn,{})}),(0,N.jsx)(A,{path:`/wishlist`,element:(0,N.jsx)(Vn,{})}),(0,N.jsx)(A,{path:`/blog`,element:(0,N.jsx)(zn,{})}),(0,N.jsx)(A,{path:`/blog/:id`,element:(0,N.jsx)(qn,{})}),(0,N.jsx)(A,{path:`/categories`,element:(0,N.jsx)(Wn,{})}),(0,N.jsx)(A,{path:`/products`,element:(0,N.jsx)(Gn,{})}),(0,N.jsx)(A,{path:`/product/:id`,element:(0,N.jsx)(Kn,{})}),(0,N.jsx)(A,{path:`/deal`,element:(0,N.jsx)(Jn,{})}),(0,N.jsx)(A,{path:`/help`,element:(0,N.jsx)(Yn,{})}),(0,N.jsx)(A,{path:`/about`,element:(0,N.jsx)(Xn,{})})]}),(0,N.jsx)(A,{path:`/login`,element:(0,N.jsx)(Hn,{})}),(0,N.jsx)(A,{path:`/register`,element:(0,N.jsx)(Un,{})})]})]}),{})})}));
