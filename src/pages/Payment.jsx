@@ -38,7 +38,7 @@ const Payment = () => {
                     margin: 4rem auto;
                     padding: 0 2rem;
                     font-family: 'Abi', system-ui, -apple-system, sans-serif;
-                    color: #1a1a1a;
+                    color: var(--text-primary);
                     display: grid;
                     grid-template-columns: 1.2fr 1fr;
                     gap: 4rem;
@@ -60,7 +60,7 @@ const Payment = () => {
 
                 .back-link {
                     display: inline-flex;
-                    color: #1a1a1a;
+                    color: var(--text-primary);
                     font-size: 1.2rem;
                     text-decoration: none;
                     margin-right: 8px;
@@ -73,12 +73,14 @@ const Payment = () => {
                     display: flex;
                     align-items: center;
                     gap: 8px;
+                    color: var(--text-primary);
                 }
 
                 .pay-title {
                     font-size: 1.8rem;
                     font-weight: 600;
                     margin-bottom: 2rem;
+                    color: var(--text-primary);
                 }
 
                 .express-checkout {
@@ -96,14 +98,14 @@ const Payment = () => {
                     font-weight: 500;
                     cursor: pointer;
                     margin-bottom: 1.5rem;
-                    transition: opacity 0.2s;
+                    transition: opacity 0.2s, background 0.3s, color 0.3s;
                 }
                 
                 .express-checkout:hover { opacity: 0.9; }
 
                 /* Methods List */
                 .methods-container {
-                    border: 1px solid #e5e7eb;
+                    border: 1px solid var(--border-color);
                     border-radius: 12px;
                     overflow: hidden;
                     margin-bottom: 2rem;
@@ -113,7 +115,7 @@ const Payment = () => {
                     display: flex;
                     align-items: center;
                     padding: 1.25rem;
-                    border-bottom: 1px solid #e5e7eb;
+                    border-bottom: 1px solid var(--border-color);
                     cursor: pointer;
                     transition: background 0.1s;
                     position: relative;
@@ -124,7 +126,7 @@ const Payment = () => {
                 }
 
                 .method-row:hover {
-                    background: #f9fafb;
+                    background: var(--bg-secondary);
                 }
 
                 .method-icon {
@@ -136,7 +138,7 @@ const Payment = () => {
                     align-items: center;
                     justify-content: center;
                     font-size: 1.2rem;
-                    color: #4b5563;
+                    color: var(--text-secondary);
                     margin-right: 1rem;
                 }
 
@@ -149,11 +151,12 @@ const Payment = () => {
                     font-size: 1rem;
                     display: block;
                     margin-bottom: 2px;
+                    color: var(--text-primary);
                 }
 
                 .method-sub {
                     font-size: 0.85rem;
-                    color: #6b7280;
+                    color: var(--text-secondary);
                     display: flex;
                     gap: 6px;
                     align-items: center;
@@ -192,13 +195,14 @@ const Payment = () => {
                     font-size: 0.95rem;
                     font-weight: 600;
                     margin-bottom: 0.5rem;
+                    color: var(--text-primary);
                 }
                 
                 .user-badge {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    color: #4b5563;
+                    color: var(--text-secondary);
                     font-size: 0.95rem;
                 }
 
@@ -232,7 +236,7 @@ const Payment = () => {
                     font-size: 1.5rem;
                     font-weight: 500;
                     margin-bottom: 2rem;
-                    color: #111;
+                    color: var(--text-primary);
                 }
 
                 .summary-item {
@@ -252,19 +256,21 @@ const Payment = () => {
                     font-size: 1rem;
                     margin-bottom: 4px;
                     display: block;
+                    color: var(--text-primary);
                 }
 
                 .item-meta {
                     font-size: 0.85rem;
-                    color: #6b7280;
+                    color: var(--text-secondary);
                 }
 
                 .item-price {
                     font-weight: 500;
+                    color: var(--text-primary);
                 }
 
                 .total-row {
-                    border-top: 1px solid #e5e7eb;
+                    border-top: 1px solid var(--border-color);
                     margin-top: 2rem;
                     padding-top: 2rem;
                     display: flex;
@@ -274,16 +280,48 @@ const Payment = () => {
 
                 .total-label {
                     font-weight: 500;
-                    color: #111;
+                    color: var(--text-primary);
                 }
 
                 .total-amount {
                     font-size: 1.5rem;
                     font-weight: 700;
+                    color: var(--text-primary);
                 }
 
                 /* Icons */
                 .card-icons i { margin-right: 4px; font-size: 1rem; }
+
+                /* Dark Mode Overrides */
+                body.dark-mode .express-checkout {
+                    background: #fff;
+                    color: #000;
+                }
+                
+                body.dark-mode .main-pay-btn.active {
+                    background: #fff;
+                    color: #000;
+                }
+                
+                body.dark-mode .main-pay-btn:hover.active {
+                    background: #e5e5e5;
+                }
+
+                body.dark-mode .method-icon {
+                    background: #333;
+                }
+
+                body.dark-mode .radio-circle {
+                    border-color: #666;
+                }
+
+                body.dark-mode .selected .radio-circle {
+                    border-color: #fff;
+                }
+
+                body.dark-mode .selected .radio-circle::after {
+                    background: #fff;
+                }
             `}</style>
 
             {/* Left Column */}
@@ -293,7 +331,7 @@ const Payment = () => {
                         <Link to="/cart" className="back-link"><i className="fa-solid fa-chevron-left"></i></Link>
                         <i className="fa-brands fa-meta"></i> Masterkart
                     </div>
-                    <div style={{ fontSize: '0.9rem', color: '#666', marginBottom: '0.5rem' }}>Hi User,</div>
+                    <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Hi User,</div>
                     <div className="pay-title">Payment ₹{total.toFixed(2)}</div>
                 </div>
 
@@ -320,7 +358,7 @@ const Payment = () => {
                         className={`method-row ${selectedMode === 'upi' ? 'selected' : ''}`}
                         onClick={() => setSelectedMode('upi')}
                     >
-                        <div className="method-icon"><i className="fa-brands fa-google-pay" style={{ color: '#444' }}></i></div>
+                        <div className="method-icon"><i className="fa-brands fa-google-pay" style={{ color: 'var(--text-primary)' }}></i></div>
                         <div className="method-details">
                             <span className="method-name">UPI</span>
                             <span className="method-sub">Google Pay, PhonePe, Paytm</span>
